@@ -1,55 +1,65 @@
 # Hi, I'm Aiswarya Rose Jacob 👋
 
-🎓 Computer Science & Engineering (AI & ML) Student
+**Computer Science Undergraduate | AI & Machine Learning Specialization**
 
-💡 Interested in Artificial Intelligence, Machine Learning, Data Science, and Technology Innovation
+Currently building skills in Python, Data Analysis, Machine Learning, and AI systems through projects, coursework, and continuous learning.
 
-🌱 Currently learning Python, Pandas, Data Analysis, and Machine Learning
+---
 
-🚀 Building projects and growing my technical portfolio
+## 🛠️ Current Technical Stack
 
-## Featured Projects
+**Languages:** Python, SQL, C
+
+**Libraries Under Active Study:** NumPy, Pandas
+
+**Tools:** Git, GitHub, Streamlit
+
+---
+
+## 🚀 Projects
 
 ### Multi-Agent Research System
 
-AI Agent project developed during the Infosys Springboard Virtual Internship using Python and Streamlit.
+*Developed during the Infosys Springboard Virtual Internship*
+
+* Built a multi-agent application using Python and Streamlit to explore workflow automation.
+* Learned application state management and multi-file Python project organization.
 
 ### Pathwise.ai
 
-AI & ML academic project focused on career guidance and learning pathway recommendations.
+*Academic Project*
+
+* AI/ML-focused project designed to provide career path recommendations based on student inputs.
+* Learned structured decision-making logic and user-data mapping.
 
 ### Blood Bank Management System
 
-Database Management System project developed as part of a team.
+*Team DBMS Project*
 
-## Experience
+* Developed a database system for donor record and blood inventory management.
+* Learned relational schema design, SQL queries, and table relationships.
 
-### IEDC BOOTCAMP CEC
+---
 
-Social Media & Marketing Team
+## 📚 Current Focus
 
-## Currently Learning
+* Learning NumPy for array-based computation
+* Learning Pandas for data analysis and manipulation
+* Strengthening Python fundamentals
+* Preparing for machine learning projects
 
-* Python
-* Pandas
-* Data Analysis
-* Machine Learning
-* Git & GitHub
+### Next Milestone
 
-## Upcoming Projects
+Build machine learning projects using:
 
-* Formula One Data Analysis
-* Machine Learning Projects
-* Data Visualization Projects
+* Linear Regression
+* Decision Trees
+* Real-world datasets
 
-## Tech Stack
+---
 
-**Languages:** Python, C, SQL
+## 💼 Connect With Me
 
-**Tools:** Git, GitHub, HTML, CSS, Streamlit
+LinkedIn: linkedin.com/in/aiswaryarosejacob
 
-## Connect With Me
-
-💼 LinkedIn: linkedin.com/in/aiswaryarosejacob
-
-⭐ Building impactful AI & Data Science projects one step at a time.
+⭐ Documenting my growth as an AI & ML student through projects and continuous learning.
