@@ -2,30 +2,41 @@
 
 🎓 Computer Science & Engineering (AI & ML) Student
 
-💡 Interested in Artificial Intelligence, Data Science, Machine Learning, and Technology Innovation
+💡 Interested in Artificial Intelligence, Machine Learning, Data Science, and Technology Innovation
 
 🌱 Currently learning Python, Pandas, Data Analysis, and Machine Learning
 
----
+🚀 Building projects and growing my technical portfolio
 
-## Projects
+## Featured Projects
 
-* Pathwise.ai (AI & ML Academic Project)
-* Blood Bank Management System (DBMS Team Project)
-* 
-### Infosys Springboard AI Agent
+### Multi-Agent Research System
 
-AI Agent project developed during the Infosys Springboard Virtual Internship.
+AI Agent project developed during the Infosys Springboard Virtual Internship using Python and Streamlit.
 
-Built using Python and Streamlit, the project explores agent-based workflows, planning, search, and task execution through modular AI components.
+### Pathwise.ai
 
-**Tech Stack:** Python, Streamlit
+AI & ML academic project focused on career guidance and learning pathway recommendations.
+
+### Blood Bank Management System
+
+Database Management System project developed as part of a team.
 
 ## Experience
 
-* Social Media & Marketing Team, IEDC BOOTCAMP CEC
+### IEDC BOOTCAMP CEC
 
-## Currently Working Towards
+Social Media & Marketing Team
+
+## Currently Learning
+
+* Python
+* Pandas
+* Data Analysis
+* Machine Learning
+* Git & GitHub
+
+## Upcoming Projects
 
 * Formula One Data Analysis
 * Machine Learning Projects
@@ -33,10 +44,12 @@ Built using Python and Streamlit, the project explores agent-based workflows, pl
 
 ## Tech Stack
 
-Python • C • SQL • Git • GitHub • HTML • CSS • Pandas
+**Languages:** Python, C, SQL
 
-## Connect
+**Tools:** Git, GitHub, HTML, CSS, Streamlit
 
-LinkedIn: linkedin.com/in/aiswaryarosejacob
+## Connect With Me
 
-⭐ Building my skills one project at a time.
+💼 LinkedIn: linkedin.com/in/aiswaryarosejacob
+
+⭐ Building impactful AI & Data Science projects one step at a time.
