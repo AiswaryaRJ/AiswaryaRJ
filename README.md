@@ -12,6 +12,14 @@
 
 * Pathwise.ai (AI & ML Academic Project)
 * Blood Bank Management System (DBMS Team Project)
+* 
+### Infosys Springboard AI Agent
+
+AI Agent project developed during the Infosys Springboard Virtual Internship.
+
+Built using Python and Streamlit, the project explores agent-based workflows, planning, search, and task execution through modular AI components.
+
+**Tech Stack:** Python, Streamlit
 
 ## Experience
 
