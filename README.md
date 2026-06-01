@@ -4,7 +4,7 @@
 
 Currently building skills in Python, Data Analysis, Machine Learning, and AI systems through projects, coursework, and continuous learning.
 
----
+----
 
 ## 🛠️ Current Technical Stack
 
@@ -14,7 +14,7 @@ Currently building skills in Python, Data Analysis, Machine Learning, and AI sys
 
 **Tools:** Git, GitHub, Streamlit
 
----
+----
 
 ## 🚀 Projects
 
@@ -39,7 +39,7 @@ Currently building skills in Python, Data Analysis, Machine Learning, and AI sys
 * Developed a database system for donor record and blood inventory management.
 * Learned relational schema design, SQL queries, and table relationships.
 
----
+----
 
 ## 📚 Current Focus
 
@@ -56,7 +56,7 @@ Build machine learning projects using:
 * Decision Trees
 * Real-world datasets
 
----
+----
 
 ## 💼 Connect With Me
 
