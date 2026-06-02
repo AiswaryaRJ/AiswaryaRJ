@@ -26,7 +26,7 @@ I am a Computer Science undergraduate specializing in **Artificial Intelligence 
 | :--- | :--- |
 | **Languages** | Python, SQL, C |
 | **AI/ML Stack** | NumPy, Pandas, Scikit-learn, Sentence-Transformers |
-| **Development** | Streamlit, Git, Docker, REST APIs |
+| **Development** | Streamlit, Git |
 
 ---
 
