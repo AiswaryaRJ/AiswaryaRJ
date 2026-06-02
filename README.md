@@ -1,4 +1,4 @@
-# Hi, I'm Aiswarya Rose Jacob 👋
+# Hi, I'm Aiswarya Rose Jacob 
 
 **Computer Science Undergraduate | AI & Machine Learning Specialization**
 
