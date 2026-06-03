@@ -187,20 +187,6 @@ Core focus on intelligent systems architecture, relational database management, 
   <sub><code>// building with precision · open to opportunities · github.com/AiswaryaRJ</code></sub>
 </div>
 
-<details>
-<summary><code>↳ Contribution Snake — Setup</code></summary>
-<br/>
-<b>Contribution Snake </b>
-<div align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AiswaryaRJ/AiswaryaRJ/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AiswaryaRJ/AiswaryaRJ/output/github-contribution-grid-snake.svg" />
-  <img alt="contribution snake" src="https://raw.githubusercontent.com/AiswaryaRJ/AiswaryaRJ/output/github-contribution-grid-snake.svg" />
-</picture>
-</div>
-
-</details>
-
 ---
 
 <div align="center">
