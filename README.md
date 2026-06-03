@@ -144,12 +144,12 @@ Core focus on intelligent systems architecture, relational database management, 
 ## `06` · GitHub Activity
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=AiswaryaRJ&show_icons=true&hide_border=false&bg_color=09090b&title_color=c9a84c&icon_color=c9a84c&text_color=7c7a8e&border_color=1f1f28" alt="GitHub Stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=AiswaryaRJ&background=09090b&ring=c9a84c&fire=c9a84c&currStreakLabel=c9a84c&sideLabels=7c7a8e&dates=3d3c4e&border=1f1f28&stroke=1f1f28&currStreakNum=e8e6f0&sideNums=e8e6f0" alt="GitHub Streak" />
+  <img src="https://github-readme-stats.vercel.app/api?username=AiswaryaRJ&show_icons=true&hide_border=false&bg_color=09090b&title_color=c9a84c&icon_color=c9a84c&text_color=7c7a8e&border_color=1f1f28&cache=1" alt="GitHub Stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=AiswaryaRJ&background=09090b&ring=c9a84c&fire=c9a84c&currStreakLabel=c9a84c&sideLabels=7c7a8e&dates=3d3c4e&border=1f1f28&stroke=1f1f28&currStreakNum=e8e6f0&sideNums=e8e6f0&cache=1" alt="GitHub Streak" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AiswaryaRJ&theme=github-compact&hide_border=true&bg_color=09090b&color=7c7a8e&line=c9a84c&point=c9a84c&area=true&area_color=1f1f28" alt="Activity Graph" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AiswaryaRJ&theme=github-compact&hide_border=true&bg_color=09090b&color=7c7a8e&line=c9a84c&point=c9a84c&area=true&area_color=1f1f28&cache=1" alt="Activity Graph" />
 </p>
 
 <br/>
