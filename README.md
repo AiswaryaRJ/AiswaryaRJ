@@ -1,23 +1,28 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,30:0a1628,60:0d2040,100:0d1117&height=240&section=header&text=Aiswarya%20Rose%20Jacob&fontSize=42&fontColor=e6edf3&fontAlignY=42&fontAlign=50&desc=AI%20%C2%B7%20Machine%20Learning%20%C2%B7%20Systems%20Engineering&descSize=16&descAlignY=60&descColor=8b949e&descAlign=50&animation=twinkling&stroke=1a3a6b&strokeWidth=1" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,30:0d0d0d,70:111111,100:000000&height=280&section=header&text=Aiswarya%20Rose%20Jacob&fontSize=52&fontColor=ffffff&fontAlignY=40&fontAlign=50&desc=AI%20%E2%80%A2%20Machine%20Learning%20%E2%80%A2%20Systems%20Engineering&descSize=16&descAlignY=58&descColor=888888&descAlign=50&animation=fadeIn&stroke=222222&strokeWidth=1" width="100%" />
 
-<br/>
+</div>
+
+<div align="center">
 
 <a href="https://linkedin.com/in/aiswaryarosejacob">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
+  <img src="https://img.shields.io/badge/LinkedIn-0A0A0A?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>&nbsp;
 <a href="mailto:aiswaryarosejacob@email.com">
-  <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
-</a>
-<img src="https://img.shields.io/badge/Status-Open%20to%20Opportunities-2ea043?style=for-the-badge&logo=checkmarx&logoColor=white" />
-<img src="https://img.shields.io/badge/B.Tech%20CSE-AI%20%26%20ML-8957e5?style=for-the-badge&logo=academia&logoColor=white" />
+  <img src="https://img.shields.io/badge/Email-0A0A0A?style=for-the-badge&logo=gmail&logoColor=white" />
+</a>&nbsp;
+<img src="https://img.shields.io/badge/%E2%97%8F%20Open%20to%20Opportunities-c0c0c0?style=for-the-badge&logoColor=000000&labelColor=c0c0c0&color=c0c0c0&fontColor=000000" />&nbsp;
+<img src="https://img.shields.io/badge/B.Tech%20CSE-1a1a1a?style=for-the-badge&logo=academia&logoColor=silver" />&nbsp;
+<img src="https://img.shields.io/badge/AI%20%26%20ML-111111?style=for-the-badge&logo=tensorflow&logoColor=silver" />
 
 <br/><br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&width=600&height=60&lines=Building+intelligent+systems+from+raw+data;Semantic+retrieval+%C2%B7+Multi-agent+frameworks+%C2%B7+ML+pipelines" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=15&duration=3500&pause=1200&color=888888&center=true&vCenter=true&multiline=true&width=700&height=58&lines=Building+intelligent+systems+from+raw+data+%E2%80%94;Semantic+retrieval+%C2%B7+Multi-agent+frameworks+%C2%B7+ML+pipelines" alt="Typing SVG" />
 
 </div>
+
+<br/>
 
 ---
 
@@ -36,7 +41,7 @@ class AiswaryaRoseJacob:
 
 ---
 
-## 👩‍💻 About
+## ◈ About
 
 Computer Science undergraduate specialising in the architecture of **intelligent systems** — bridging raw data to actionable intelligence through clean code, modular design, and rigorous application of machine learning.
 
@@ -46,20 +51,20 @@ I build systems that think: from **semantic retrieval pipelines** that understan
 
 ---
 
-## 🛠️ Technical Stack
+## ◈ Technical Stack
 
 <div align="center">
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![Python](https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-111111?style=for-the-badge&logo=mysql&logoColor=silver)
+![C](https://img.shields.io/badge/C-000000?style=for-the-badge&logo=c&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-111111?style=for-the-badge&logo=numpy&logoColor=silver)
+![Pandas](https://img.shields.io/badge/Pandas-000000?style=for-the-badge&logo=pandas&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-111111?style=for-the-badge&logo=scikit-learn&logoColor=silver)
+![Streamlit](https://img.shields.io/badge/Streamlit-000000?style=for-the-badge&logo=streamlit&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-111111?style=for-the-badge&logo=sqlite&logoColor=silver)
+![Git](https://img.shields.io/badge/Git-000000?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-111111?style=for-the-badge&logo=github&logoColor=silver)
 
 </div>
 
@@ -74,135 +79,147 @@ I build systems that think: from **semantic retrieval pipelines** that understan
 
 ---
 
-## 🏆 GitHub Trophies
+## ◈ Trophies
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=AiswaryaRJ&theme=darkhub&no-frame=true&no-bg=true&margin-w=6&column=6" width="100%" />
+<img src="https://github-profile-trophy.vercel.app/?username=AiswaryaRJ&theme=onestar&no-frame=true&no-bg=true&margin-w=6&column=6" width="100%" />
 
 </div>
 
 ---
 
-## 🚀 Featured Projects
+## ◈ Featured Projects
 
 <br/>
 
-**🔵 [Semantic Local Search](https://github.com/AiswaryaRJ/semantic-local-search)**
+**○ [Semantic Local Search](https://github.com/AiswaryaRJ/semantic-local-search)**
 
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![NLP](https://img.shields.io/badge/-NLP-8957e5?style=flat-square)
-![Embeddings](https://img.shields.io/badge/-Sentence%20Transformers-0d7a6b?style=flat-square)
-![Cosine Similarity](https://img.shields.io/badge/-Cosine%20Similarity-1a4a7a?style=flat-square)
+![Python](https://img.shields.io/badge/-Python-000000?style=flat-square&logo=python&logoColor=white)
+![NLP](https://img.shields.io/badge/-NLP-1a1a1a?style=flat-square)
+![Sentence Transformers](https://img.shields.io/badge/-Sentence%20Transformers-111111?style=flat-square)
+![Cosine Similarity](https://img.shields.io/badge/-Cosine%20Similarity-1a1a1a?style=flat-square)
 
-> Context-aware information retrieval without cloud dependency. Built a custom pipeline using Sentence-Transformers to map text into a **384-dimensional vector space**. Uses **Cosine Similarity** for conceptual intent matching — prioritising meaning over keyword matching.
-
-<br/>
-
-**🟢 [Multi-Agent Research System](https://github.com/AiswaryaRJ/multi-agent-research-system)**
-
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Streamlit](https://img.shields.io/badge/-Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
-![Infosys Springboard](https://img.shields.io/badge/-Infosys%20Springboard-007CC3?style=flat-square)
-![Multi-Agent](https://img.shields.io/badge/-Multi--Agent%20Framework-2ea043?style=flat-square)
-
-> Developed during the **Infosys Springboard Virtual Internship**. Multi-agent framework for automated research aggregation — autonomous task delegation and robust lifecycle state management. Modular multi-file Python architecture built for long-term scalability and reproducibility.
+> Custom pipeline mapping text to a **384-dimensional vector space** using Sentence-Transformers. Cosine Similarity for conceptual intent matching — prioritising meaning over keyword matching. Fully local, zero cloud dependency.
 
 <br/>
 
-**🟣 Pathwise.ai**
+**○ [Multi-Agent Research System](https://github.com/AiswaryaRJ/multi-agent-research-system)**
 
-![AI/ML](https://img.shields.io/badge/-AI%2FML-8957e5?style=flat-square)
-![Decision Logic](https://img.shields.io/badge/-Decision%20Logic-6e40c9?style=flat-square)
-![Career Tech](https://img.shields.io/badge/-Career%20Recommendation-4a2a7a?style=flat-square)
+![Python](https://img.shields.io/badge/-Python-000000?style=flat-square&logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/-Streamlit-1a1a1a?style=flat-square&logo=streamlit&logoColor=white)
+![Infosys Springboard](https://img.shields.io/badge/-Infosys%20Springboard-111111?style=flat-square)
+![Multi-Agent](https://img.shields.io/badge/-Multi--Agent%20Framework-1a1a1a?style=flat-square)
 
-> AI-driven career path recommendation system providing personalised guidance from structured student input. Structured decision logic with explainable user-data mapping and outcome reasoning.
+> Developed during the **Infosys Springboard Virtual Internship**. Multi-agent framework with autonomous task routing and lifecycle state management. Modular multi-file Python architecture built for scalability and reproducibility.
 
 <br/>
 
-**🟠 Blood Bank Management System**
+**○ Pathwise.ai**
 
-![SQL](https://img.shields.io/badge/-SQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![SQLite](https://img.shields.io/badge/-SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
-![DBMS](https://img.shields.io/badge/-DBMS-854d0e?style=flat-square)
-![Team Project](https://img.shields.io/badge/-Team%20Project-2ea043?style=flat-square)
+![AI/ML](https://img.shields.io/badge/-AI%2FML-000000?style=flat-square)
+![Decision Logic](https://img.shields.io/badge/-Decision%20Logic-1a1a1a?style=flat-square)
+![Career Recommendation](https://img.shields.io/badge/-Career%20Recommendation-111111?style=flat-square)
 
-> Full relational schema design for donor records and blood inventory management. Complex SQL queries across normalised tables. Led database architecture decisions in collaborative team delivery.
+> AI-driven career path recommendation providing personalised guidance from structured student input. Structured decision logic with explainable user-data mapping and outcome reasoning.
+
+<br/>
+
+**○ Blood Bank Management System**
+
+![SQL](https://img.shields.io/badge/-SQL-000000?style=flat-square&logo=mysql&logoColor=white)
+![SQLite](https://img.shields.io/badge/-SQLite-1a1a1a?style=flat-square&logo=sqlite&logoColor=white)
+![DBMS](https://img.shields.io/badge/-DBMS-111111?style=flat-square)
+![Team Project](https://img.shields.io/badge/-Team%20Project-1a1a1a?style=flat-square)
+
+> Full relational schema for donor records and blood inventory management. Complex SQL across normalised tables. Led database architecture decisions in collaborative team delivery.
 
 ---
 
-## 💼 Experience & Education
+## ◈ Experience & Education
 
 <br/>
 
 <table>
   <tr>
-    <td width="50px" align="center">💼</td>
+    <td width="60px" align="center">💼</td>
     <td>
       <strong>Virtual Intern — Workflow Automation</strong> &nbsp;·&nbsp; <em>Infosys Springboard</em><br/>
       Built the Multi-Agent Research System using Python and Streamlit. Explored agent orchestration, application state management, and professional multi-file project structure. First real-world software delivery experience.
     </td>
   </tr>
   <tr>
-    <td width="50px" align="center">🎓</td>
+    <td width="60px" align="center">🎓</td>
     <td>
       <strong>B.Tech — Computer Science Engineering</strong> &nbsp;·&nbsp; <em>AI & ML Specialisation</em><br/>
-      Core focus on intelligent systems architecture, relational database management, and algorithmic foundations. Applying coursework directly through real builds across ML, NLP, and systems design.
+      Core focus on intelligent systems architecture, relational database management, and algorithmic foundations. Applying coursework through real builds across ML, NLP, and systems design.
     </td>
   </tr>
 </table>
 
 ---
 
-## 📌 Currently
+## ◈ Currently
 
 <br/>
 
 ```
-🔹  Building first supervised ML models — Linear Regression & Decision Trees on real datasets
-🔹  Deepening NumPy array computation & Pandas data analysis
-🔹  Expanding Semantic Local Search with richer retrieval features
-🔹  Exploring RAG (Retrieval-Augmented Generation) architecture
-🔹  Next milestone → end-to-end ML pipeline with Scikit-learn deployment
+◈   Building supervised ML models — Linear Regression & Decision Trees on real datasets
+◈   Deepening NumPy array computation & Pandas data analysis
+◈   Expanding Semantic Local Search with richer retrieval features
+◈   Exploring RAG (Retrieval-Augmented Generation) architecture
+◈   Next milestone → end-to-end ML pipeline with Scikit-learn deployment
 ```
 
 ---
 
-## 📊 GitHub Activity
+## ◈ GitHub Activity
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=AiswaryaRJ&theme=react-dark&hide_border=true&bg_color=0d1117&color=58a6ff&line=1f6feb&point=58a6ff&area=true&area_color=1f3a5f" width="100%" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=AiswaryaRJ&theme=github-compact&hide_border=true&bg_color=000000&color=888888&line=ffffff&point=c0c0c0&area=true&area_color=1a1a1a" width="100%" />
 
 </div>
 
 ---
 
-## 🐍 Contribution Snake
+## ◈ GitHub Stats
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=AiswaryaRJ&show_icons=true&theme=dark&bg_color=000000&title_color=ffffff&icon_color=888888&text_color=888888&border_color=222222&hide_border=false&rank_icon=github" width="48%" />
+&nbsp;
+<img src="https://github-readme-streak-stats.herokuapp.com?user=AiswaryaRJ&theme=dark&background=000000&ring=888888&fire=ffffff&currStreakLabel=888888&sideLabels=888888&dates=555555&border=222222" width="48%" />
+
+</div>
+
+---
+
+## ◈ Contribution Snake
 
 <div align="center">
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AiswaryaRJ/AiswaryaRJ/output/github-contribution-grid-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AiswaryaRJ/AiswaryaRJ/output/github-contribution-grid-snake.svg" />
-  <img alt="contribution snake animation" src="https://raw.githubusercontent.com/AiswaryaRJ/AiswaryaRJ/output/github-contribution-grid-snake.svg" />
+  <img alt="contribution snake" src="https://raw.githubusercontent.com/AiswaryaRJ/AiswaryaRJ/output/github-contribution-grid-snake.svg" />
 </picture>
 
 </div>
 
-> **Note:** To activate the contribution snake, create `.github/workflows/snake.yml` in this repo with the workflow below ↓
-
 <details>
-<summary>Click to expand — Snake Workflow Setup</summary>
+<summary>↳ Activate snake animation (one-time setup)</summary>
+
+<br/>
+
+Create `.github/workflows/snake.yml`:
 
 ```yaml
 name: Generate Snake
-
 on:
   schedule:
     - cron: "0 */12 * * *"
   workflow_dispatch:
-
 jobs:
   generate:
     runs-on: ubuntu-latest
@@ -221,14 +238,16 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
+Then go to **Actions → Generate Snake → Run workflow**.
+
 </details>
 
 ---
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,30:0a1628,60:0d2040,100:0d1117&height=120&section=footer&animation=twinkling" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:0d0d0d,100:000000&height=120&section=footer&animation=twinkling" width="100%" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&duration=4000&pause=500&color=484F58&center=true&vCenter=true&width=500&lines=%2F%2F+building+systems+with+precision+%C2%B7+open+to+opportunities" alt="footer" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=12&duration=5000&pause=1000&color=444444&center=true&vCenter=true&width=500&lines=%2F%2F+building+systems+with+precision+%C2%B7+open+to+opportunities" alt="footer" />
 
 </div>
