@@ -72,7 +72,6 @@ I build systems that think: from **semantic retrieval pipelines** that understan
 
 ### 🔵 [Semantic Local Search](https://github.com/AiswaryaRJ/semantic-local-search)
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![NLP](https://img.shields.io/badge/-NLP-8957e5?style=flat-square)
 ![Embeddings](https://img.shields.io/badge/-Embeddings-0d7a6b?style=flat-square)
 
 Context-aware information retrieval without cloud dependency. Built a custom pipeline using Sentence-Transformers to map text into a **384-dimensional vector space**. Uses **Cosine Similarity** for conceptual intent matching — prioritising meaning over keyword matching.
