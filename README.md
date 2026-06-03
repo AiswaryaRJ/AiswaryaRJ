@@ -142,10 +142,9 @@ Core focus on intelligent systems architecture, relational database management, 
 ---
 
 ## `06` · GitHub Activity
-## 06 · GitHub Activity
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=AiswaryaRJ&show_icons=true&bg_color=09090b&title_color=c9a84c&icon_color=c9a84c&text_color=7c7a8e&border_color=1f1f28&hide_border=false&rank_icon=github" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=AiswaryaRJ&show_icons=true&bg_color=09090b&title_color=c9a84c&icon_color=c9a84c&text_color=7c7a8e&border_color=1f1f28&hide_border=false" alt="GitHub Stats" />
   <img src="https://github-readme-streak-stats.herokuapp.com?user=AiswaryaRJ&background=09090b&ring=c9a84c&fire=c9a84c&currStreakLabel=c9a84c&sideLabels=7c7a8e&dates=3d3c4e&border=1f1f28&stroke=1f1f28&currStreakNum=e8e6f0&sideNums=e8e6f0" alt="GitHub Streak" />
 </p>
 
@@ -156,6 +155,16 @@ Core focus on intelligent systems architecture, relational database management, 
 </p>
 
 <br/>
+
+<details>
+<summary><code>↳ GitHub Trophies</code></summary>
+<br/>
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=AiswaryaRJ&theme=darkhub&no-frame=true&no-bg=true" alt="GitHub Trophies" />
+</p>
+
+</details>
 
 <details>
 <summary><code>↳ GitHub Trophies</code></summary>
