@@ -65,7 +65,7 @@ I build systems that think: semantic retrieval pipelines that understand intent,
 <strong>Semantic Local Search</strong>
 </td>
 <td>Custom pipeline mapping text into a <strong>384-dimensional vector space</strong> using Sentence-Transformers. Prioritises conceptual intent over keyword matching. Fully local — zero cloud dependency.</td>
-<td><code>Sentence-Transformers</code> <code>NLP</code> <code>Cosine Similarity</code></td>
+<td><code>Sentence-Transformers</code> <code>Cosine Similarity</code></td>
 </tr>
 <tr>
 <td>
