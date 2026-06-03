@@ -167,16 +167,6 @@ Core focus on intelligent systems architecture, relational database management, 
 </details>
 
 <details>
-<summary><code>↳ GitHub Trophies</code></summary>
-<br/>
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=AiswaryaRJ&theme=darkhub&no-frame=true&no-bg=true" alt="GitHub Trophies" />
-</p>
-
-</details>
-
-<details>
 <summary><code>↳ GitHub Contribution Snake</code></summary>
 <br/>
 
