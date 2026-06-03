@@ -5,7 +5,6 @@ on:
     - cron: "0 */12 * * *"
   workflow_dispatch:
 
-# Grants write permission to push the generated SVGs back to your repository
 permissions:
   contents: write
 
@@ -13,7 +12,6 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      # Ensures the runner can access your repository contents
       - uses: actions/checkout@v4
 
       - uses: Platane/snk/svg-only@v3
@@ -22,8 +20,11 @@ jobs:
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+          # 'snake_color' makes it match your gold theme
+          # 'animation_duration' set to 3s makes it feel more energetic
+          snake_color: "#c9a84c"
+          animation_duration: 3s
 
-      # Upgraded to @v4 to run natively on Node 24 and eliminate deprecation warnings
       - uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
