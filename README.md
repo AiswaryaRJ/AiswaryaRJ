@@ -1,6 +1,7 @@
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,30:0d0d0d,70:111111,100:000000&height=280&section=header&text=Aiswarya%20Rose%20Jacob&fontSize=52&fontColor=ffffff&fontAlignY=40&fontAlign=50&desc=AI%20%E2%80%A2%20Machine%20Learning%20%E2%80%A2%20Systems%20Engineering&descSize=16&descAlignY=58&descColor=888888&descAlign=50&animation=fadeIn&stroke=222222&strokeWidth=1" width="100%" />
 </div>
+
 <div align="center">
 <a href="https://linkedin.com/in/aiswaryarosejacob">
   <img src="https://img.shields.io/badge/LinkedIn-0A0A0A?style=for-the-badge&logo=linkedin&logoColor=white" />
@@ -12,8 +13,9 @@
 <img src="https://img.shields.io/badge/B.Tech%20CSE-1a1a1a?style=for-the-badge&logo=academia&logoColor=silver" />&nbsp;
 <img src="https://img.shields.io/badge/AI%20%26%20ML-111111?style=for-the-badge&logo=tensorflow&logoColor=silver" /><br/><br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=15&duration=3500&pause=1200&color=888888&center=true&vCenter=true&multiline=true&width=700&height=58&lines=Building+intelligent+systems+from+raw+data+%E2%80%94;Semantic+retrieval+%C2%B7+Multi-agent+frameworks+%C2%B7+ML+pipelines" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=15&duration=3500&pause=1200&color=aaaaaa&center=true&vCenter=true&multiline=true&width=700&height=58&lines=Discovering+latent+patterns+in+high-dimensional+data...;Engineering+modular%2C+production-grade+multi-agent+frameworks...;Optimizing+local+semantic+retrieval+and+RAG+architectures..." alt="Typing SVG" />
 </div>
+
 <br/>
 
 ```python
@@ -56,12 +58,14 @@ I build systems that think: from semantic retrieval pipelines that understand in
 
 <br/>
 
-| Category | Technologies |
+| Category | Technologies & Frameworks |
 | :--- | :--- |
-| **Languages** | Python · SQL · C |
-| **AI / ML** | Sentence-Transformers · Scikit-learn · NumPy · Pandas |
-| **Engineering** | Streamlit · SQLite · Git · GitHub |
-| **Concepts** | Vector Embeddings · Cosine Similarity · Multi-Agent Systems · Relational DB |
+| **Languages** | `Python` &nbsp;·&nbsp; `SQL` &nbsp;·&nbsp; `C` |
+| **AI / ML** | `Sentence-Transformers` &nbsp;·&nbsp; `Scikit-learn` &nbsp;·&nbsp; `NumPy` &nbsp;·&nbsp; `Pandas` |
+| **Engineering** | `Streamlit` &nbsp;·&nbsp; `SQLite` &nbsp;·&nbsp; `Git` &nbsp;·&nbsp; `GitHub` |
+| **Concepts** | `Vector Embeddings` &nbsp;·&nbsp; `Cosine Similarity` &nbsp;·&nbsp; `Multi-Agent Systems` |
+
+<br/>
 
 ◈ Trophies
 <div align="center">
@@ -96,52 +100,55 @@ Developed during the Infosys Springboard Virtual Internship. Multi-agent framewo
 
 AI-driven career path recommendation providing personalised guidance from structured student input. Structured decision logic with explainable user-data mapping and outcome reasoning.
 
-<br/>○ Blood Bank Management System
-
-![SQL](https://img.shields.io/badge/-SQL-000000?style=flat-square&logo=mysql&logoColor=white)
-![SQLite](https://img.shields.io/badge/-SQLite-1a1a1a?style=flat-square&logo=sqlite&logoColor=white)
-![DBMS](https://img.shields.io/badge/-DBMS-333333?style=flat-square)
-![Team Project](https://img.shields.io/badge/-Team%20Project-1a1a1a?style=flat-square)
-
-Full relational schema for donor records and blood inventory management. Complex SQL across normalised tables. Led database architecture decisions in collaborative team delivery.
+<br/>
 
 ◈ Experience & Education
 <br/>
+
 <table>
   <tr>
-    <td width="60px" align="center">💼</td>
+    <td width="60px" align="center" valign="top"><h3>💼</h3></td>
     <td>
-      <strong>Virtual Intern — Workflow Automation</strong> &nbsp;·&nbsp; <em>Infosys Springboard</em><br/>
+      <strong>Virtual Intern — Workflow Automation</strong><br/>
+      <em>Infosys Springboard</em><br/>
       Built the Multi-Agent Research System using Python and Streamlit. Explored agent orchestration, application state management, and professional multi-file project structure. First real-world software delivery experience.
     </td>
   </tr>
   <tr>
-    <td width="60px" align="center">🎓</td>
+    <td width="60px" align="center" valign="top"><h3>🎓</h3></td>
     <td>
-      <strong>B.Tech — Computer Science Engineering</strong> &nbsp;·&nbsp; <em>AI & ML Specialisation</em><br/>
+      <strong>B.Tech — Computer Science Engineering</strong><br/>
+      <em>AI & ML Specialisation</em><br/>
       Core focus on intelligent systems architecture, relational database management, and algorithmic foundations. Applying coursework through real builds across ML, NLP, and systems design.
     </td>
   </tr>
 </table>
 
+<br/>
+
 ◈ Currently
-<br/>◈   Building supervised ML models — Linear Regression & Decision Trees on real datasets
-◈   Deepening NumPy array computation & Pandas data analysis
-◈   Expanding Semantic Local Search with richer retrieval features
-◈   Exploring RAG (Retrieval-Augmented Generation) architecture
-◈   Next milestone → end-to-end ML pipeline with Scikit-learn deployment
+<br/>◈&nbsp;&nbsp;&nbsp;Building supervised ML models — Linear Regression & Decision Trees on real datasets
+◈&nbsp;&nbsp;&nbsp;Deepening NumPy array computation & Pandas data analysis
+◈&nbsp;&nbsp;&nbsp;Expanding Semantic Local Search with richer retrieval features
+◈&nbsp;&nbsp;&nbsp;Exploring RAG (Retrieval-Augmented Generation) architecture
+◈&nbsp;&nbsp;&nbsp;Next milestone → end-to-end ML pipeline with Scikit-learn deployment
+
+<br/>
 
 ◈ GitHub Activity
 <div align="center">
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=AiswaryaRJ&theme=github-compact&hide_border=true&bg_color=000000&color=888888&line=ffffff&point=c0c0c0&area=true&area_color=1a1a1a" width="100%" />
 </div>
 
+<br/>
+
 ◈ GitHub Stats
 <div align="center">
 <img src="https://github-readme-stats.vercel.app/api?username=AiswaryaRJ&show_icons=true&bg_color=000000&title_color=ffffff&icon_color=ffffff&text_color=888888&border_color=333333&hide_border=false&rank_icon=github" width="48%" />
-&nbsp;
 <img src="https://github-readme-streak-stats.herokuapp.com?user=AiswaryaRJ&background=000000&ring=ffffff&fire=ffffff&currStreakLabel=ffffff&sideLabels=888888&dates=555555&border=333333&stroke=333333&currStreakNum=ffffff&sideNums=ffffff" width="48%" />
 </div>
+
+<br/>
 
 ◈ Contribution Snake
 <div align="center">
@@ -151,9 +158,12 @@ Full relational schema for donor records and blood inventory management. Complex
   <img alt="contribution snake" src="https://raw.githubusercontent.com/AiswaryaRJ/AiswaryaRJ/output/github-contribution-grid-snake.svg" />
 </picture>
 </div>
+
 <details>
 <summary>↳ Activate snake animation (one-time setup)</summary>
-<br/>Create .github/workflows/snake.yml:
+<br/>
+
+Create `.github/workflows/snake.yml`:
 
 ```yaml
 name: Generate Snake
@@ -171,15 +181,19 @@ jobs:
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-      - uses: crazy-max/ghaction-github-pages=v3
+      - uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: output
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
-Then go to Actions → Generate Snake → Run workflow.
+
+Then go to **Actions → Generate Snake → Run workflow**.
+
 </details>
+
+<br/>
 
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:0d0d0d,100:000000&height=120&section=footer&animation=twinkling" width="100%" />
