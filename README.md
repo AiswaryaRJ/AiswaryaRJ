@@ -157,10 +157,10 @@ Core focus on intelligent systems architecture, relational database management, 
 <br/>
 
 <b>GitHub Trophies</b>
-<br/>
+### ↳ GitHub Trophies
 
 <p align="center">
-  <img src="https://github-profile-trophies.ryco.io/?username=AiswaryaRJ&theme=darkhub&no-frame=true&no-bg=true&v=5" alt="GitHub Trophies" />
+  <img src="https://github-profile-trophy.ryco.io/?username=AiswaryaRJ&theme=darkhub&no-frame=true&no-bg=true&v=10" alt="GitHub Trophies" />
 </p>
 
 <b>GitHub Contribution Snake</b>
