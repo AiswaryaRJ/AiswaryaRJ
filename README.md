@@ -142,17 +142,18 @@ Core focus on intelligent systems architecture, relational database management, 
 ---
 
 ## `06` · GitHub Activity
+## 06 · GitHub Activity
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=AiswaryaRJ&show_icons=true&bg_color=09090b&title_color=c9a84c&icon_color=c9a84c&text_color=7c7a8e&border_color=1f1f28&hide_border=false&rank_icon=github&card_width=420" width="48%" alt="GitHub Stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=AiswaryaRJ&background=09090b&ring=c9a84c&fire=c9a84c&currStreakLabel=c9a84c&sideLabels=7c7a8e&dates=3d3c4e&border=1f1f28&stroke=1f1f28&currStreakNum=e8e6f0&sideNums=e8e6f0" width="48%" alt="GitHub Streak" />
-</div>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=AiswaryaRJ&show_icons=true&bg_color=09090b&title_color=c9a84c&icon_color=c9a84c&text_color=7c7a8e&border_color=1f1f28&hide_border=false&rank_icon=github" alt="GitHub Stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=AiswaryaRJ&background=09090b&ring=c9a84c&fire=c9a84c&currStreakLabel=c9a84c&sideLabels=7c7a8e&dates=3d3c4e&border=1f1f28&stroke=1f1f28&currStreakNum=e8e6f0&sideNums=e8e6f0" alt="GitHub Streak" />
+</p>
 
 <br/>
 
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AiswaryaRJ&theme=github-compact&hide_border=true&bg_color=09090b&color=7c7a8e&line=c9a84c&point=c9a84c&area=true&area_color=1f1f28" width="97%" alt="Activity Graph" />
-</div>
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AiswaryaRJ&theme=github-compact&hide_border=true&bg_color=09090b&color=7c7a8e&line=c9a84c&point=c9a84c&area=true&area_color=1f1f28" alt="Activity Graph" />
+</p>
 
 <br/>
 
@@ -160,11 +161,31 @@ Core focus on intelligent systems architecture, relational database management, 
 <summary><code>↳ GitHub Trophies</code></summary>
 <br/>
 
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=AiswaryaRJ&theme=darkhub&no-frame=true&no-bg=true" width="100%" alt="GitHub Trophies" />
-</div>
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=AiswaryaRJ&theme=darkhub&no-frame=true&no-bg=true" alt="GitHub Trophies" />
+</p>
 
 </details>
+
+<details>
+<summary><code>↳ GitHub Contribution Snake</code></summary>
+<br/>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AiswaryaRJ/AiswaryaRJ/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AiswaryaRJ/AiswaryaRJ/output/github-contribution-grid-snake.svg" />
+    <img alt="contribution snake" src="https://raw.githubusercontent.com/AiswaryaRJ/AiswaryaRJ/output/github-contribution-grid-snake.svg" />
+  </picture>
+</p>
+
+</details>
+
+<br/>
+
+<div align="center">
+  <sub><code>// building with precision · open to opportunities · github.com/AiswaryaRJ</code></sub>
+</div>
 
 <details>
 <summary><code>↳ Contribution Snake — Setup</code></summary>
