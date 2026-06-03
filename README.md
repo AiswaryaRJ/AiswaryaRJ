@@ -164,8 +164,9 @@ Core focus on intelligent systems architecture, relational database management, 
 <details>
 <summary><code>↳ Contribution Snake — Setup</code></summary>
 <br/>
-
-
+```
+Contribution Snake
+```
 <div align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AiswaryaRJ/AiswaryaRJ/output/github-contribution-grid-snake-dark.svg" />
