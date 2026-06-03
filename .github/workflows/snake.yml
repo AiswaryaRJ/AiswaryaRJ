@@ -1,19 +1,30 @@
 name: Generate Snake
+
 on:
   schedule:
     - cron: "0 */12 * * *"
   workflow_dispatch:
+
+# Grants write permission to push the generated SVGs back to your repository
+permissions:
+  contents: write
+
 jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
+      # Ensures the runner can access your repository contents
+      - uses: actions/checkout@v4
+
       - uses: Platane/snk/svg-only@v3
         with:
           github_user_name: AiswaryaRJ
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-      - uses: crazy-max/ghaction-github-pages@v3
+
+      # Upgraded to @v4 to run natively on Node 24 and eliminate deprecation warnings
+      - uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
