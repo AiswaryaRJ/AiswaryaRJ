@@ -167,7 +167,7 @@ Core focus on intelligent systems architecture, relational database management, 
 </details>
 
 <details>
-<summary><code>↳ GitHub Contribution Snake</code></summary>
+<code>↳ GitHub Contribution Snake</code>
 <br/>
 
 <p align="center">
