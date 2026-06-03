@@ -187,8 +187,3 @@ Core focus on intelligent systems architecture, relational database management, 
   <sub><code>// building with precision · open to opportunities · github.com/AiswaryaRJ</code></sub>
 </div>
 
----
-
-<div align="center">
-<sub><code>// building with precision · open to opportunities · github.com/AiswaryaRJ</code></sub>
-</div>
