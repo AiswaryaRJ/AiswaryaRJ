@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,40:111111,70:1c1c1c,100:000000&height=280&section=header&text=Aiswarya%20Rose%20Jacob&fontSize=52&fontColor=ffffff&fontAlignY=40&fontAlign=50&desc=AI%20%E2%80%A2%20Machine%20Learning%20%E2%80%A2%20Systems%20Engineering&descSize=16&descAlignY=58&descColor=888888&descAlign=50&animation=fadeIn&stroke=222222&strokeWidth=1" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,30:0d0d0d,70:111111,100:000000&height=280&section=header&text=Aiswarya%20Rose%20Jacob&fontSize=52&fontColor=ffffff&fontAlignY=40&fontAlign=50&desc=AI%20%E2%80%A2%20Machine%20Learning%20%E2%80%A2%20Systems%20Engineering&descSize=16&descAlignY=58&descColor=888888&descAlign=50&animation=fadeIn&stroke=222222&strokeWidth=1" width="100%" />
 </div>
 
 <div align="center">
@@ -11,9 +11,11 @@
 </a>&nbsp;
 <img src="https://img.shields.io/badge/%E2%97%8F%20Open%20to%20Opportunities-c0c0c0?style=for-the-badge&logoColor=000000&labelColor=c0c0c0&color=c0c0c0&fontColor=000000" />&nbsp;
 <img src="https://img.shields.io/badge/B.Tech%20CSE-1a1a1a?style=for-the-badge&logo=academia&logoColor=silver" />&nbsp;
-<img src="https://img.shields.io/badge/AI%20%26%20ML-111111?style=for-the-badge&logo=tensorflow&logoColor=silver" /><br/><br/>
+<img src="https://img.shields.io/badge/AI%20%26%20ML-111111?style=for-the-badge&logo=tensorflow&logoColor=silver" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=15&duration=3800&pause=1200&color=aaaaaa&center=true&vCenter=true&multiline=true&width=700&height=58&lines=Building+intelligent+systems+from+raw+data...;Architecting+semantic+search+%C2%B7+multi-agent+frameworks...;Designing+end-to-end+machine+learning+pipelines..." alt="Typing SVG" />
+<br/><br/>
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=15&duration=3500&pause=1200&color=aaaaaa&center=true&vCenter=true&width=700&height=35&lines=Building+intelligent+systems+from+raw+data...;Architecting+semantic+search+ pipelines...;Coordinating+autonomous+multi-agent+frameworks...;Designing+end-to-end+machine+learning+pipelines..." alt="Typing SVG" />
 </div>
 
 <br/>
@@ -38,140 +40,81 @@ I build systems that think: from semantic retrieval pipelines that understand in
 
 "Documenting growth as an AI & ML student through real projects, continuous learning, and building with precision."
 
-◈ Technical Stack
+---
 
+### ◈ Technical Stack
+
+*   **Languages**
+    Python  ·  SQL  ·  C
+*   **AI & Machine Learning**
+    Sentence-Transformers  ·  Scikit-learn  ·  NumPy  ·  Pandas
+*   **Systems & Engineering**
+    Streamlit  ·  SQLite  ·  Git  ·  GitHub
+*   **Core Architectures**
+    Vector Embeddings  ·  Cosine Similarity  ·  Multi-Agent Frameworks  ·  Relational Databases
+
+---
+
+### ◈ Trophies
 <div align="center">
-  <img src="https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python&logoColor=white" />&nbsp;
-  <img src="https://img.shields.io/badge/SQL-1a1a1a?style=for-the-badge&logo=mysql&logoColor=silver" />&nbsp;
-  <img src="https://img.shields.io/badge/C-000000?style=for-the-badge&logo=c&logoColor=white" />&nbsp;
-  <img src="https://img.shields.io/badge/NumPy-1a1a1a?style=for-the-badge&logo=numpy&logoColor=silver" />&nbsp;
-  <img src="https://img.shields.io/badge/Pandas-000000?style=for-the-badge&logo=pandas&logoColor=white" />&nbsp;
-  <img src="https://img.shields.io/badge/Scikit--learn-1a1a1a?style=for-the-badge&logo=scikit-learn&logoColor=silver" />&nbsp;
-  <img src="https://img.shields.io/badge/Streamlit-000000?style=for-the-badge&logo=streamlit&logoColor=white" />&nbsp;
-  <img src="https://img.shields.io/badge/SQLite-1a1a1a?style=for-the-badge&logo=sqlite&logoColor=silver" />&nbsp;
-  <img src="https://img.shields.io/badge/Git-000000?style=for-the-badge&logo=git&logoColor=white" />&nbsp;
-  <img src="https://img.shields.io/badge/GitHub-1a1a1a?style=for-the-badge&logo=github&logoColor=silver" />
+  <img src="https://github-profile-trophy.vercel.app/?username=AiswaryaRJ&theme=darkhub&no-frame=true&no-bg=true&margin-w=6&column=6" width="100%" alt="Trophies" />
 </div>
 
-<br/>
+### ◈ Featured Projects
 
-<table>
-  <thead>
-    <tr>
-      <th align="left" width="160px" style="color: #ffffff; background-color: #111111;">Category</th>
-      <th align="left" style="color: #ffffff; background-color: #111111;">Core Technologies & Frameworks</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Languages</strong></td>
-      <td><code>Python</code> &nbsp;·&nbsp; <code>SQL</code> &nbsp;·&nbsp; <code>C</code></td>
-    </tr>
-    <tr>
-      <td><strong>AI / ML</strong></td>
-      <td><code>Sentence-Transformers</code> &nbsp;·&nbsp; <code>Scikit-learn</code> &nbsp;·&nbsp; <code>NumPy</code> &nbsp;·&nbsp; <code>Pandas</code></td>
-    </tr>
-    <tr>
-      <td><strong>Engineering</strong></td>
-      <td><code>Streamlit</code> &nbsp;·&nbsp; <code>SQLite</code> &nbsp;·&nbsp; <code>Git</code> &nbsp;·&nbsp; <code>GitHub</code></td>
-    </tr>
-    <tr>
-      <td><strong>Concepts</strong></td>
-      <td><code>Vector Embeddings</code> &nbsp;·&nbsp; <code>Cosine Similarity</code> &nbsp;·&nbsp; <code>Multi-Agent Systems</code> &nbsp;·&nbsp; <code>Relational DB</code></td>
-    </tr>
-  </tbody>
-</table>
-
-<br/>
-
-◈ Trophies
-<div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=AiswaryaRJ&theme=darkhub&no-frame=true&no-bg=true&margin-w=6&column=6" width="100%" />
-</div>
-
-◈ Featured Projects
-
-<br/>○ Semantic Local Search
-
-![Python](https://img.shields.io/badge/-Python-000000?style=flat-square&logo=python&logoColor=white)
-![NLP](https://img.shields.io/badge/-NLP-1a1a1a?style=flat-square)
-![Sentence Transformers](https://img.shields.io/badge/-Sentence%20Transformers-333333?style=flat-square)
-![Cosine Similarity](https://img.shields.io/badge/-Cosine%20Similarity-1a1a1a?style=flat-square)
-
+##### ○ Semantic Local Search
 Custom pipeline mapping text to a 384-dimensional vector space using Sentence-Transformers. Cosine Similarity for conceptual intent matching — prioritising meaning over keyword matching. Fully local, zero cloud dependency.
+`Python` · `NLP` · `Sentence-Transformers` · `Vector Embeddings`
 
-<br/>○ Multi-Agent Research System
-
-![Python](https://img.shields.io/badge/-Python-000000?style=flat-square&logo=python&logoColor=white)
-![Streamlit](https://img.shields.io/badge/-Streamlit-1a1a1a?style=flat-square&logo=streamlit&logoColor=white)
-![Infosys Springboard](https://img.shields.io/badge/-Infosys%20Springboard-333333?style=flat-square)
-![Multi-Agent](https://img.shields.io/badge/-Multi--Agent%20Framework-1a1a1a?style=flat-square)
-
+##### ○ Multi-Agent Research System
 Developed during the Infosys Springboard Virtual Internship. Multi-agent framework with autonomous task routing and lifecycle state management. Modular multi-file Python architecture built for scalability and reproducibility.
+`Python` · `Streamlit` · `Agent Orchestration` · `Workflow Automation`
 
-<br/>○ Pathwise.ai
-
-![AI/ML](https://img.shields.io/badge/-AI%2FML-000000?style=flat-square)
-![Decision Logic](https://img.shields.io/badge/-Decision%20Logic-1a1a1a?style=flat-square)
-![Career Recommendation](https://img.shields.io/badge/-Career%20Recommendation-333333?style=flat-square)
-
+##### ○ Pathwise.ai
 AI-driven career path recommendation providing personalised guidance from structured student input. Structured decision logic with explainable user-data mapping and outcome reasoning.
+`AI/ML` · `Decision Logic` · `Data Mapping`
 
-<br/>
+---
 
-◈ Experience & Education
-<br/>
+### ◈ Experience & Education
 
-<table>
-  <tr>
-    <td width="60px" align="center" valign="top" style="border-right: 1px solid #333333; color: #ffffff;"><h3>💼</h3></td>
-    <td style="padding-left: 15px;">
-      <strong style="color: #ffffff; font-size: 16px;">Virtual Intern — Workflow Automation</strong> &nbsp;·&nbsp; <em>Infosys Springboard</em><br/>
-      <span style="color: #aaaaaa; font-size: 14px;">Built the Multi-Agent Research System using Python and Streamlit. Explored agent orchestration, application state management, and professional multi-file project structure. First real-world software delivery experience.</span>
-    </td>
-  </tr>
-  <tr>
-    <td width="60px" align="center" valign="top" style="border-right: 1px solid #333333; color: #ffffff;"><h3>🎓</h3></td>
-    <td style="padding-left: 15px;">
-      <strong style="color: #ffffff; font-size: 16px;">B.Tech — Computer Science Engineering</strong> &nbsp;·&nbsp; <em>AI & ML Specialisation</em><br/>
-      <span style="color: #aaaaaa; font-size: 14px;">Core focus on intelligent systems architecture, relational database management, and algorithmic foundations. Applying coursework through real builds across ML, NLP, and systems design.</span>
-    </td>
-  </tr>
-</table>
+*   **Virtual Intern — Workflow Automation**  |  *Infosys Springboard*
+    Built the Multi-Agent Research System using Python and Streamlit. Explored agent orchestration, application state management, and professional multi-file project structure.
+*   **B.Tech — Computer Science Engineering**  |  *AI & ML Specialisation*
+    Core focus on intelligent systems architecture, relational database management, and algorithmic foundations. Applying coursework through real builds across ML, NLP, and systems design.
 
-<br/>
+---
 
-◈ Currently
-<br/>◈   Building supervised ML models — Linear Regression & Decision Trees on real datasets
-◈   Deepening NumPy array computation & Pandas data analysis
-◈   Expanding Semantic Local Search with richer retrieval features
-◈   Exploring RAG (Retrieval-Augmented Generation) architecture
-◈   Next milestone → end-to-end ML pipeline with Scikit-learn deployment
+### ◈ Currently
+*   Building supervised ML models — Linear Regression & Decision Trees on real datasets
+*   Deepening NumPy array computation & Pandas data analysis
+*   Expanding Semantic Local Search with richer retrieval features
+*   Exploring RAG (Retrieval-Augmented Generation) architecture
+*   Next milestone → end-to-end ML pipeline with Scikit-learn deployment
 
-<br/>
+---
 
-◈ GitHub Activity
+### ◈ GitHub Analytics
 <div align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=AiswaryaRJ&theme=github-compact&hide_border=true&bg_color=000000&color=888888&line=ffffff&point=c0c0c0&area=true&area_color=1a1a1a" width="100%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AiswaryaRJ&theme=github-compact&hide_border=true&bg_color=000000&color=888888&line=ffffff&point=c0c0c0&area=true&area_color=1a1a1a" width="100%" alt="Activity Graph" />
 </div>
 
 <br/>
 
-◈ GitHub Stats
 <div align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=AiswaryaRJ&show_icons=true&bg_color=000000&title_color=ffffff&icon_color=ffffff&text_color=888888&border_color=333333&hide_border=false&rank_icon=github" width="48%" />
-<img src="https://github-readme-streak-stats.herokuapp.com?user=AiswaryaRJ&background=000000&ring=ffffff&fire=ffffff&currStreakLabel=ffffff&sideLabels=888888&dates=555555&border=333333&stroke=333333&currStreakNum=ffffff&sideNums=ffffff" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=AiswaryaRJ&show_icons=true&bg_color=000000&title_color=ffffff&icon_color=ffffff&text_color=888888&border_color=333333&hide_border=false&rank_icon=github" width="48%" alt="Stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=AiswaryaRJ&background=000000&ring=ffffff&fire=ffffff&currStreakLabel=ffffff&sideLabels=888888&dates=555555&border=333333&stroke=333333&currStreakNum=ffffff&sideNums=ffffff" width="48%" alt="Streak" />
 </div>
 
-<br/>
+---
 
-◈ Contribution Snake
+### ◈ Contribution Snake
 <div align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AiswaryaRJ/AiswaryaRJ/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AiswaryaRJ/AiswaryaRJ/output/github-contribution-grid-snake.svg" />
-  <img alt="contribution snake" src="https://raw.githubusercontent.com/AiswaryaRJ/AiswaryaRJ/output/github-contribution-grid-snake.svg" />
-</picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AiswaryaRJ/AiswaryaRJ/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AiswaryaRJ/AiswaryaRJ/output/github-contribution-grid-snake.svg" />
+    <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/AiswaryaRJ/AiswaryaRJ/output/github-contribution-grid-snake.svg" width="100%" />
+  </picture>
 </div>
 
 <details>
@@ -212,6 +155,7 @@ Then go to **Actions → Generate Snake → Run workflow**.
 
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:0d0d0d,100:000000&height=120&section=footer&animation=twinkling" width="100%" />
+<br/>
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=12&duration=5000&pause=1000&color=444444&center=true&vCenter=true&width=500&lines=%2F%2F+building+systems+with+precision+%C2%B7+open+to+opportunities" alt="footer" />
 </div>
 ```
