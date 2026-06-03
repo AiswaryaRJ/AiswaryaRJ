@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,30:0d0d0d,70:111111,100:000000&height=280&section=header&text=Aiswarya%20Rose%20Jacob&fontSize=52&fontColor=ffffff&fontAlignY=40&fontAlign=50&desc=AI%20%E2%80%A2%20Machine%20Learning%20%E2%80%A2%20Systems%20Engineering&descSize=16&descAlignY=58&descColor=888888&descAlign=50&animation=fadeIn&stroke=222222&strokeWidth=1" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,40:111111,70:1c1c1c,100:000000&height=280&section=header&text=Aiswarya%20Rose%20Jacob&fontSize=52&fontColor=ffffff&fontAlignY=40&fontAlign=50&desc=AI%20%E2%80%A2%20Machine%20Learning%20%E2%80%A2%20Systems%20Engineering&descSize=16&descAlignY=58&descColor=888888&descAlign=50&animation=fadeIn&stroke=222222&strokeWidth=1" width="100%" />
 </div>
 
 <div align="center">
@@ -13,7 +13,7 @@
 <img src="https://img.shields.io/badge/B.Tech%20CSE-1a1a1a?style=for-the-badge&logo=academia&logoColor=silver" />&nbsp;
 <img src="https://img.shields.io/badge/AI%20%26%20ML-111111?style=for-the-badge&logo=tensorflow&logoColor=silver" /><br/><br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=15&duration=3500&pause=1200&color=aaaaaa&center=true&vCenter=true&multiline=true&width=700&height=58&lines=Discovering+latent+patterns+in+high-dimensional+data...;Engineering+modular%2C+production-grade+multi-agent+frameworks...;Optimizing+local+semantic+retrieval+and+RAG+architectures..." alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=15&duration=3800&pause=1200&color=aaaaaa&center=true&vCenter=true&multiline=true&width=700&height=58&lines=Building+intelligent+systems+from+raw+data...;Architecting+semantic+search+%C2%B7+multi-agent+frameworks...;Designing+end-to-end+machine+learning+pipelines..." alt="Typing SVG" />
 </div>
 
 <br/>
@@ -39,31 +39,48 @@ I build systems that think: from semantic retrieval pipelines that understand in
 "Documenting growth as an AI & ML student through real projects, continuous learning, and building with precision."
 
 ◈ Technical Stack
-<br/>
 
 <div align="center">
-
-![Python](https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-1a1a1a?style=for-the-badge&logo=mysql&logoColor=silver)
-![C](https://img.shields.io/badge/C-000000?style=for-the-badge&logo=c&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-1a1a1a?style=for-the-badge&logo=numpy&logoColor=silver)
-![Pandas](https://img.shields.io/badge/Pandas-000000?style=for-the-badge&logo=pandas&logoColor=white)
-![Scikit--learn](https://img.shields.io/badge/Scikit--learn-1a1a1a?style=for-the-badge&logo=scikit-learn&logoColor=silver)
-![Streamlit](https://img.shields.io/badge/Streamlit-000000?style=for-the-badge&logo=streamlit&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-1a1a1a?style=for-the-badge&logo=sqlite&logoColor=silver)
-![Git](https://img.shields.io/badge/Git-000000?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-1a1a1a?style=for-the-badge&logo=github&logoColor=silver)
-
+  <img src="https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python&logoColor=white" />&nbsp;
+  <img src="https://img.shields.io/badge/SQL-1a1a1a?style=for-the-badge&logo=mysql&logoColor=silver" />&nbsp;
+  <img src="https://img.shields.io/badge/C-000000?style=for-the-badge&logo=c&logoColor=white" />&nbsp;
+  <img src="https://img.shields.io/badge/NumPy-1a1a1a?style=for-the-badge&logo=numpy&logoColor=silver" />&nbsp;
+  <img src="https://img.shields.io/badge/Pandas-000000?style=for-the-badge&logo=pandas&logoColor=white" />&nbsp;
+  <img src="https://img.shields.io/badge/Scikit--learn-1a1a1a?style=for-the-badge&logo=scikit-learn&logoColor=silver" />&nbsp;
+  <img src="https://img.shields.io/badge/Streamlit-000000?style=for-the-badge&logo=streamlit&logoColor=white" />&nbsp;
+  <img src="https://img.shields.io/badge/SQLite-1a1a1a?style=for-the-badge&logo=sqlite&logoColor=silver" />&nbsp;
+  <img src="https://img.shields.io/badge/Git-000000?style=for-the-badge&logo=git&logoColor=white" />&nbsp;
+  <img src="https://img.shields.io/badge/GitHub-1a1a1a?style=for-the-badge&logo=github&logoColor=silver" />
 </div>
 
 <br/>
 
-| Category | Technologies & Frameworks |
-| :--- | :--- |
-| **Languages** | `Python` &nbsp;·&nbsp; `SQL` &nbsp;·&nbsp; `C` |
-| **AI / ML** | `Sentence-Transformers` &nbsp;·&nbsp; `Scikit-learn` &nbsp;·&nbsp; `NumPy` &nbsp;·&nbsp; `Pandas` |
-| **Engineering** | `Streamlit` &nbsp;·&nbsp; `SQLite` &nbsp;·&nbsp; `Git` &nbsp;·&nbsp; `GitHub` |
-| **Concepts** | `Vector Embeddings` &nbsp;·&nbsp; `Cosine Similarity` &nbsp;·&nbsp; `Multi-Agent Systems` |
+<table>
+  <thead>
+    <tr>
+      <th align="left" width="160px" style="color: #ffffff; background-color: #111111;">Category</th>
+      <th align="left" style="color: #ffffff; background-color: #111111;">Core Technologies & Frameworks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Languages</strong></td>
+      <td><code>Python</code> &nbsp;·&nbsp; <code>SQL</code> &nbsp;·&nbsp; <code>C</code></td>
+    </tr>
+    <tr>
+      <td><strong>AI / ML</strong></td>
+      <td><code>Sentence-Transformers</code> &nbsp;·&nbsp; <code>Scikit-learn</code> &nbsp;·&nbsp; <code>NumPy</code> &nbsp;·&nbsp; <code>Pandas</code></td>
+    </tr>
+    <tr>
+      <td><strong>Engineering</strong></td>
+      <td><code>Streamlit</code> &nbsp;·&nbsp; <code>SQLite</code> &nbsp;·&nbsp; <code>Git</code> &nbsp;·&nbsp; <code>GitHub</code></td>
+    </tr>
+    <tr>
+      <td><strong>Concepts</strong></td>
+      <td><code>Vector Embeddings</code> &nbsp;·&nbsp; <code>Cosine Similarity</code> &nbsp;·&nbsp; <code>Multi-Agent Systems</code> &nbsp;·&nbsp; <code>Relational DB</code></td>
+    </tr>
+  </tbody>
+</table>
 
 <br/>
 
@@ -107,19 +124,17 @@ AI-driven career path recommendation providing personalised guidance from struct
 
 <table>
   <tr>
-    <td width="60px" align="center" valign="top"><h3>💼</h3></td>
-    <td>
-      <strong>Virtual Intern — Workflow Automation</strong><br/>
-      <em>Infosys Springboard</em><br/>
-      Built the Multi-Agent Research System using Python and Streamlit. Explored agent orchestration, application state management, and professional multi-file project structure. First real-world software delivery experience.
+    <td width="60px" align="center" valign="top" style="border-right: 1px solid #333333; color: #ffffff;"><h3>💼</h3></td>
+    <td style="padding-left: 15px;">
+      <strong style="color: #ffffff; font-size: 16px;">Virtual Intern — Workflow Automation</strong> &nbsp;·&nbsp; <em>Infosys Springboard</em><br/>
+      <span style="color: #aaaaaa; font-size: 14px;">Built the Multi-Agent Research System using Python and Streamlit. Explored agent orchestration, application state management, and professional multi-file project structure. First real-world software delivery experience.</span>
     </td>
   </tr>
   <tr>
-    <td width="60px" align="center" valign="top"><h3>🎓</h3></td>
-    <td>
-      <strong>B.Tech — Computer Science Engineering</strong><br/>
-      <em>AI & ML Specialisation</em><br/>
-      Core focus on intelligent systems architecture, relational database management, and algorithmic foundations. Applying coursework through real builds across ML, NLP, and systems design.
+    <td width="60px" align="center" valign="top" style="border-right: 1px solid #333333; color: #ffffff;"><h3>🎓</h3></td>
+    <td style="padding-left: 15px;">
+      <strong style="color: #ffffff; font-size: 16px;">B.Tech — Computer Science Engineering</strong> &nbsp;·&nbsp; <em>AI & ML Specialisation</em><br/>
+      <span style="color: #aaaaaa; font-size: 14px;">Core focus on intelligent systems architecture, relational database management, and algorithmic foundations. Applying coursework through real builds across ML, NLP, and systems design.</span>
     </td>
   </tr>
 </table>
@@ -127,11 +142,11 @@ AI-driven career path recommendation providing personalised guidance from struct
 <br/>
 
 ◈ Currently
-<br/>◈&nbsp;&nbsp;&nbsp;Building supervised ML models — Linear Regression & Decision Trees on real datasets
-◈&nbsp;&nbsp;&nbsp;Deepening NumPy array computation & Pandas data analysis
-◈&nbsp;&nbsp;&nbsp;Expanding Semantic Local Search with richer retrieval features
-◈&nbsp;&nbsp;&nbsp;Exploring RAG (Retrieval-Augmented Generation) architecture
-◈&nbsp;&nbsp;&nbsp;Next milestone → end-to-end ML pipeline with Scikit-learn deployment
+<br/>◈   Building supervised ML models — Linear Regression & Decision Trees on real datasets
+◈   Deepening NumPy array computation & Pandas data analysis
+◈   Expanding Semantic Local Search with richer retrieval features
+◈   Exploring RAG (Retrieval-Augmented Generation) architecture
+◈   Next milestone → end-to-end ML pipeline with Scikit-learn deployment
 
 <br/>
 
