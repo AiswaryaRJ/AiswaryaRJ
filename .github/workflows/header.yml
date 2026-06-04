@@ -118,7 +118,7 @@ jobs:
             <!-- subtitle -->
             <text x="600" y="152" text-anchor="middle" fill="#7c7a8e"
               font-size="13" font-family="monospace" letter-spacing="5">
-              AI  ·  MACHINE LEARNING  ·  SYSTEMS ENGINEERING
+              CSE  ·  AI & ML  ·  BUILDING INTELLIGENT SYSTEMS
             </text>
           </svg>'''
 
