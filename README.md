@@ -108,7 +108,7 @@ I build systems that think: semantic retrieval pipelines that understand intent,
 | **Languages** | `Python` · `SQL` · `C` |
 | **AI / ML** | `Sentence-Transformers` · `Scikit-learn` · `NumPy` · `Pandas` |
 | **Engineering** | `Streamlit` · `SQLite` · `Git` · `GitHub` |
-| **Concepts** | `Vector Embeddings` · `Cosine Similarity` · `Multi-Agent Systems` · `RAG` |
+| **Concepts** | `Vector Embeddings` · `Cosine Similarity` · `Multi-Agent Systems` |
 | **Databases** | `Relational DB` · `SQLite` · `Structured Query Design` |
 
 ---
