@@ -81,8 +81,10 @@ jobs:
           stars        = sum(r["stargazerCount"] for r in user["repositories"]["nodes"])
           forks        = sum(r["forkCount"]       for r in user["repositories"]["nodes"])
 
-          calendar     = user["contributionsCollection"]["contributionCalendar"]
-          total_contribs = calendar["totalContributions"]
+          all_time       = user["allTime"]["contributionCalendar"]
+          total_contribs = all_time["totalContributions"]
+          this_year_contribs = user["thisYear"]["contributionCalendar"]["totalContributions"]
+          calendar       = all_time
 
           # ── Streak calculation ──
           from datetime import datetime, timedelta
@@ -149,7 +151,7 @@ jobs:
             <text x="25" y="110" fill="#7c7a8e" font-size="13" font-family="monospace">📦 Public Repos</text>
             <text x="470" y="110" fill="#e8e6f0" font-size="13" font-family="monospace" text-anchor="end">{public_repos}</text>
             <text x="25" y="140" fill="#7c7a8e" font-size="13" font-family="monospace">🔥 Contributions (this year)</text>
-            <text x="470" y="140" fill="#e8e6f0" font-size="13" font-family="monospace" text-anchor="end">{total_contribs}</text>
+            <text x="470" y="140" fill="#e8e6f0" font-size="13" font-family="monospace" text-anchor="end">{this_year_contribs}</text>
             <text x="25" y="170" fill="#7c7a8e" font-size="13" font-family="monospace">👥 Followers</text>
             <text x="470" y="170" fill="#e8e6f0" font-size="13" font-family="monospace" text-anchor="end">{followers}</text>
           </svg>'''
