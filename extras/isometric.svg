@@ -1,0 +1,89 @@
+<svg width="750" height="280" xmlns="http://www.w3.org/2000/svg">
+  <rect width="750" height="280" fill="#09090b"/>
+  <!-- stars -->
+  <circle cx="50" cy="30" r="1.5" fill="#7c7a8e"/>
+  <circle cx="150" cy="20" r="1" fill="#7c7a8e"/>
+  <circle cx="300" cy="40" r="1.5" fill="#7c7a8e"/>
+  <circle cx="500" cy="15" r="1" fill="#7c7a8e"/>
+  <circle cx="650" cy="35" r="1.5" fill="#7c7a8e"/>
+  <circle cx="700" cy="60" r="1" fill="#7c7a8e"/>
+  <!-- ground -->
+  <rect x="0" y="220" width="750" height="60" fill="#0d0d1a"/>
+  <line x1="0" y1="220" x2="750" y2="220" stroke="#1f1f28" stroke-width="1.5"/>
+  <!-- buildings -->
+  
+    <polygon points="60,220 90,220 90,180 60,180" fill="#1a1a2e" stroke="#c9a84c" stroke-width="0.8"/>
+    <polygon points="90,220 105,205 105,165 90,180" fill="#13132a" stroke="#c9a84c" stroke-width="0.8"/>
+    <polygon points="60,180 90,180 105,165 75,165" fill="#c9a84c" opacity="0.7" stroke="#c9a84c" stroke-width="0.8"/>
+    <rect x="65" y="190" width="8" height="10" fill="#c9a84c" opacity="0.6"/>
+    <rect x="77" y="190" width="8" height="10" fill="#c9a84c" opacity="0.4"/>
+  
+    <polygon points="115,220 145,220 145,157 115,157" fill="#1a1a2e" stroke="#c9a84c" stroke-width="0.8"/>
+    <polygon points="145,220 160,205 160,142 145,157" fill="#13132a" stroke="#c9a84c" stroke-width="0.8"/>
+    <polygon points="115,157 145,157 160,142 130,142" fill="#c9a84c" opacity="0.7" stroke="#c9a84c" stroke-width="0.8"/>
+    <rect x="120" y="167" width="8" height="10" fill="#c9a84c" opacity="0.6"/>
+    <rect x="132" y="167" width="8" height="10" fill="#c9a84c" opacity="0.4"/>
+  
+    <polygon points="170,220 200,220 200,134 170,134" fill="#1a1a2e" stroke="#c9a84c" stroke-width="0.8"/>
+    <polygon points="200,220 215,205 215,119 200,134" fill="#13132a" stroke="#c9a84c" stroke-width="0.8"/>
+    <polygon points="170,134 200,134 215,119 185,119" fill="#c9a84c" opacity="0.7" stroke="#c9a84c" stroke-width="0.8"/>
+    <rect x="175" y="144" width="8" height="10" fill="#c9a84c" opacity="0.6"/>
+    <rect x="187" y="144" width="8" height="10" fill="#c9a84c" opacity="0.4"/>
+  
+    <polygon points="225,220 255,220 255,111 225,111" fill="#1a1a2e" stroke="#c9a84c" stroke-width="0.8"/>
+    <polygon points="255,220 270,205 270,96 255,111" fill="#13132a" stroke="#c9a84c" stroke-width="0.8"/>
+    <polygon points="225,111 255,111 270,96 240,96" fill="#c9a84c" opacity="0.7" stroke="#c9a84c" stroke-width="0.8"/>
+    <rect x="230" y="121" width="8" height="10" fill="#c9a84c" opacity="0.6"/>
+    <rect x="242" y="121" width="8" height="10" fill="#c9a84c" opacity="0.4"/>
+  
+    <polygon points="280,220 310,220 310,168 280,168" fill="#1a1a2e" stroke="#c9a84c" stroke-width="0.8"/>
+    <polygon points="310,220 325,205 325,153 310,168" fill="#13132a" stroke="#c9a84c" stroke-width="0.8"/>
+    <polygon points="280,168 310,168 325,153 295,153" fill="#c9a84c" opacity="0.7" stroke="#c9a84c" stroke-width="0.8"/>
+    <rect x="285" y="178" width="8" height="10" fill="#c9a84c" opacity="0.6"/>
+    <rect x="297" y="178" width="8" height="10" fill="#c9a84c" opacity="0.4"/>
+  
+    <polygon points="335,220 365,220 365,145 335,145" fill="#1a1a2e" stroke="#c9a84c" stroke-width="0.8"/>
+    <polygon points="365,220 380,205 380,130 365,145" fill="#13132a" stroke="#c9a84c" stroke-width="0.8"/>
+    <polygon points="335,145 365,145 380,130 350,130" fill="#c9a84c" opacity="0.7" stroke="#c9a84c" stroke-width="0.8"/>
+    <rect x="340" y="155" width="8" height="10" fill="#c9a84c" opacity="0.6"/>
+    <rect x="352" y="155" width="8" height="10" fill="#c9a84c" opacity="0.4"/>
+  
+    <polygon points="390,220 420,220 420,122 390,122" fill="#1a1a2e" stroke="#c9a84c" stroke-width="0.8"/>
+    <polygon points="420,220 435,205 435,107 420,122" fill="#13132a" stroke="#c9a84c" stroke-width="0.8"/>
+    <polygon points="390,122 420,122 435,107 405,107" fill="#c9a84c" opacity="0.7" stroke="#c9a84c" stroke-width="0.8"/>
+    <rect x="395" y="132" width="8" height="10" fill="#c9a84c" opacity="0.6"/>
+    <rect x="407" y="132" width="8" height="10" fill="#c9a84c" opacity="0.4"/>
+  
+    <polygon points="445,220 475,220 475,179 445,179" fill="#1a1a2e" stroke="#c9a84c" stroke-width="0.8"/>
+    <polygon points="475,220 490,205 490,164 475,179" fill="#13132a" stroke="#c9a84c" stroke-width="0.8"/>
+    <polygon points="445,179 475,179 490,164 460,164" fill="#c9a84c" opacity="0.7" stroke="#c9a84c" stroke-width="0.8"/>
+    <rect x="450" y="189" width="8" height="10" fill="#c9a84c" opacity="0.6"/>
+    <rect x="462" y="189" width="8" height="10" fill="#c9a84c" opacity="0.4"/>
+  
+    <polygon points="500,220 530,220 530,156 500,156" fill="#1a1a2e" stroke="#c9a84c" stroke-width="0.8"/>
+    <polygon points="530,220 545,205 545,141 530,156" fill="#13132a" stroke="#c9a84c" stroke-width="0.8"/>
+    <polygon points="500,156 530,156 545,141 515,141" fill="#c9a84c" opacity="0.7" stroke="#c9a84c" stroke-width="0.8"/>
+    <rect x="505" y="166" width="8" height="10" fill="#c9a84c" opacity="0.6"/>
+    <rect x="517" y="166" width="8" height="10" fill="#c9a84c" opacity="0.4"/>
+  
+    <polygon points="555,220 585,220 585,133 555,133" fill="#1a1a2e" stroke="#c9a84c" stroke-width="0.8"/>
+    <polygon points="585,220 600,205 600,118 585,133" fill="#13132a" stroke="#c9a84c" stroke-width="0.8"/>
+    <polygon points="555,133 585,133 600,118 570,118" fill="#c9a84c" opacity="0.7" stroke="#c9a84c" stroke-width="0.8"/>
+    <rect x="560" y="143" width="8" height="10" fill="#c9a84c" opacity="0.6"/>
+    <rect x="572" y="143" width="8" height="10" fill="#c9a84c" opacity="0.4"/>
+  
+    <polygon points="610,220 640,220 640,110 610,110" fill="#1a1a2e" stroke="#c9a84c" stroke-width="0.8"/>
+    <polygon points="640,220 655,205 655,95 640,110" fill="#13132a" stroke="#c9a84c" stroke-width="0.8"/>
+    <polygon points="610,110 640,110 655,95 625,95" fill="#c9a84c" opacity="0.7" stroke="#c9a84c" stroke-width="0.8"/>
+    <rect x="615" y="120" width="8" height="10" fill="#c9a84c" opacity="0.6"/>
+    <rect x="627" y="120" width="8" height="10" fill="#c9a84c" opacity="0.4"/>
+  
+    <polygon points="665,220 695,220 695,167 665,167" fill="#1a1a2e" stroke="#c9a84c" stroke-width="0.8"/>
+    <polygon points="695,220 710,205 710,152 695,167" fill="#13132a" stroke="#c9a84c" stroke-width="0.8"/>
+    <polygon points="665,167 695,167 710,152 680,152" fill="#c9a84c" opacity="0.7" stroke="#c9a84c" stroke-width="0.8"/>
+    <rect x="670" y="177" width="8" height="10" fill="#c9a84c" opacity="0.6"/>
+    <rect x="682" y="177" width="8" height="10" fill="#c9a84c" opacity="0.4"/>
+  
+  <!-- label -->
+  <text x="375" y="268" text-anchor="middle" fill="#3d3c4e" font-size="11" font-family="monospace">isometric city · 12 repos · AiswaryaRJ</text>
+</svg>
