@@ -46,7 +46,17 @@ jobs:
                   }
                 }
               }
-              allTime: contributionsCollection(from: "2024-09-12T00:00:00Z") {
+              year2024: contributionsCollection(from: "2024-09-12T00:00:00Z", to: "2024-12-31T23:59:59Z") {
+                contributionCalendar {
+                  totalContributions
+                }
+              }
+              year2025: contributionsCollection(from: "2025-01-01T00:00:00Z", to: "2025-12-31T23:59:59Z") {
+                contributionCalendar {
+                  totalContributions
+                }
+              }
+              year2026: contributionsCollection(from: "2026-01-01T00:00:00Z") {
                 contributionCalendar {
                   totalContributions
                   weeks {
@@ -57,7 +67,7 @@ jobs:
                   }
                 }
               }
-              thisYear: contributionsCollection {
+              thisYear: contributionsCollection(from: "2026-01-01T00:00:00Z") {
                 contributionCalendar {
                   totalContributions
                 }
@@ -81,10 +91,13 @@ jobs:
           stars        = sum(r["stargazerCount"] for r in user["repositories"]["nodes"])
           forks        = sum(r["forkCount"]       for r in user["repositories"]["nodes"])
 
-          all_time       = user["allTime"]["contributionCalendar"]
-          total_contribs = all_time["totalContributions"]
+          total_contribs = (
+            user["year2024"]["contributionCalendar"]["totalContributions"] +
+            user["year2025"]["contributionCalendar"]["totalContributions"] +
+            user["year2026"]["contributionCalendar"]["totalContributions"]
+          )
           this_year_contribs = user["thisYear"]["contributionCalendar"]["totalContributions"]
-          calendar       = all_time
+          calendar = user["year2026"]["contributionCalendar"]
 
           # ── Streak calculation ──
           from datetime import datetime, timedelta
@@ -95,7 +108,8 @@ jobs:
               all_days.append((day["date"], day["contributionCount"]))
 
           all_days.sort(key=lambda x: x[0])
-          today_str = datetime.utcnow().strftime("%Y-%m-%d")
+          today_str     = datetime.utcnow().strftime("%Y-%m-%d")
+          yesterday_str = (datetime.utcnow() - timedelta(days=1)).strftime("%Y-%m-%d")
 
           # current streak
           current_streak = 0
@@ -110,8 +124,8 @@ jobs:
                 streak_end = date_str
               streak_start = date_str
             else:
-              if date_str == today_str:
-                continue  # today might not be done yet
+              if date_str in (today_str, yesterday_str):
+                continue  # grace period for today and yesterday
               break
 
           # longest streak
