@@ -11,7 +11,7 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v3
-      - uses: ryo-ma/github-profile-trophy@v1
+      - uses: ryo-ma/github-profile-trophy@master
         with:
           username: AiswaryaRJ
           theme: darkhub
