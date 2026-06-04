@@ -1,0 +1,226 @@
+name: Generate Stats
+on:
+  schedule:
+    - cron: "0 * * * *"   # every hour
+  workflow_dispatch:
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate Stats SVG
+        env:
+          USERNAME: AiswaryaRJ
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p stats
+          python3 << 'EOF'
+          import urllib.request, json, os
+
+          token = os.environ["GITHUB_TOKEN"]
+          username = os.environ["USERNAME"]
+
+          headers = {
+            "Authorization": f"bearer {token}",
+            "Content-Type": "application/json",
+            "User-Agent": "stats-gen"
+          }
+
+          # ── GraphQL: contributions, stars, repos, followers ──
+          query = """
+          query($login: String!) {
+            user(login: $login) {
+              followers { totalCount }
+              repositories(ownerAffiliations: OWNER, first: 100) {
+                totalCount
+                nodes {
+                  stargazerCount
+                  forkCount
+                  languages(first: 10, orderBy: {field: SIZE, direction: DESC}) {
+                    edges {
+                      size
+                      node { name color }
+                    }
+                  }
+                }
+              }
+              contributionsCollection {
+                contributionCalendar {
+                  totalContributions
+                  weeks {
+                    contributionDays {
+                      contributionCount
+                      date
+                    }
+                  }
+                }
+              }
+            }
+          }
+          """
+
+          payload = json.dumps({"query": query, "variables": {"login": username}}).encode()
+          req = urllib.request.Request(
+            "https://api.github.com/graphql",
+            data=payload,
+            headers=headers,
+            method="POST"
+          )
+          result = json.loads(urllib.request.urlopen(req).read())
+          user = result["data"]["user"]
+
+          followers    = user["followers"]["totalCount"]
+          public_repos = user["repositories"]["totalCount"]
+          stars        = sum(r["stargazerCount"] for r in user["repositories"]["nodes"])
+          forks        = sum(r["forkCount"]       for r in user["repositories"]["nodes"])
+
+          calendar     = user["contributionsCollection"]["contributionCalendar"]
+          total_contribs = calendar["totalContributions"]
+
+          # ── Streak calculation ──
+          from datetime import datetime, timedelta
+
+          all_days = []
+          for week in calendar["weeks"]:
+            for day in week["contributionDays"]:
+              all_days.append((day["date"], day["contributionCount"]))
+
+          all_days.sort(key=lambda x: x[0])
+          today_str = datetime.utcnow().strftime("%Y-%m-%d")
+
+          # current streak
+          current_streak = 0
+          streak_start = ""
+          streak_end = ""
+          for date_str, count in reversed(all_days):
+            if date_str > today_str:
+              continue
+            if count > 0:
+              current_streak += 1
+              if not streak_end:
+                streak_end = date_str
+              streak_start = date_str
+            else:
+              if date_str == today_str:
+                continue  # today might not be done yet
+              break
+
+          # longest streak
+          longest = 0
+          run = 0
+          for _, count in all_days:
+            if count > 0:
+              run += 1
+              longest = max(longest, run)
+            else:
+              run = 0
+
+          def fmt_date(d):
+            return datetime.strptime(d, "%Y-%m-%d").strftime("%b %-d") if d else ""
+
+          # ── Language sizes via GraphQL ──
+          lang_sizes = {}
+          for repo in user["repositories"]["nodes"]:
+            for edge in repo["languages"]["edges"]:
+              lang = edge["node"]["name"]
+              size = edge["size"]
+              color = edge["node"].get("color") or "#c9a84c"
+              if lang not in lang_sizes:
+                lang_sizes[lang] = {"size": 0, "color": color}
+              lang_sizes[lang]["size"] += size
+
+          top_langs = sorted(lang_sizes.items(), key=lambda x: x[1]["size"], reverse=True)[:6]
+          total_size = sum(v["size"] for _, v in top_langs) or 1
+
+          # ── STATS SVG ──
+          svg = f'''<svg width="495" height="195" xmlns="http://www.w3.org/2000/svg">
+            <rect width="495" height="195" rx="10" fill="#09090b" stroke="#1f1f28" stroke-width="1.5"/>
+            <text x="25" y="35" fill="#c9a84c" font-size="16" font-weight="bold" font-family="monospace">GitHub Stats · AiswaryaRJ</text>
+            <line x1="25" y1="45" x2="470" y2="45" stroke="#1f1f28" stroke-width="1"/>
+            <text x="25" y="80"  fill="#7c7a8e" font-size="13" font-family="monospace">⭐ Total Stars</text>
+            <text x="470" y="80"  fill="#e8e6f0" font-size="13" font-family="monospace" text-anchor="end">{stars}</text>
+            <text x="25" y="110" fill="#7c7a8e" font-size="13" font-family="monospace">📦 Public Repos</text>
+            <text x="470" y="110" fill="#e8e6f0" font-size="13" font-family="monospace" text-anchor="end">{public_repos}</text>
+            <text x="25" y="140" fill="#7c7a8e" font-size="13" font-family="monospace">🔥 Contributions (this year)</text>
+            <text x="470" y="140" fill="#e8e6f0" font-size="13" font-family="monospace" text-anchor="end">{total_contribs}</text>
+            <text x="25" y="170" fill="#7c7a8e" font-size="13" font-family="monospace">👥 Followers</text>
+            <text x="470" y="170" fill="#e8e6f0" font-size="13" font-family="monospace" text-anchor="end">{followers}</text>
+          </svg>'''
+
+          with open("stats/stats.svg", "w") as f:
+            f.write(svg)
+
+          # ── STREAK SVG ──
+          streak_label = f"{fmt_date(streak_start)} – {fmt_date(streak_end)}" if streak_start else "No streak yet"
+          streak_svg = f'''<svg width="495" height="195" xmlns="http://www.w3.org/2000/svg">
+            <rect width="495" height="195" rx="10" fill="#09090b" stroke="#1f1f28" stroke-width="1.5"/>
+
+            <!-- Left: Total Contributions -->
+            <text x="123" y="85"  fill="#e8e6f0" font-size="32" font-weight="bold" font-family="sans-serif" text-anchor="middle">{total_contribs}</text>
+            <text x="123" y="115" fill="#7c7a8e" font-size="13" font-family="sans-serif" text-anchor="middle">Total Contributions</text>
+            <text x="123" y="140" fill="#3d3c4e" font-size="11" font-family="sans-serif" text-anchor="middle">Sep 12, 2024 – Present</text>
+            <line x1="196" y1="40" x2="196" y2="160" stroke="#1f1f28" stroke-width="1"/>
+
+            <!-- Center: Current Streak ring -->
+            <circle cx="247" cy="97" r="45" fill="none" stroke="#1f1f28" stroke-width="6"/>
+            <circle cx="247" cy="97" r="45" fill="none" stroke="#c9a84c" stroke-width="6"
+              stroke-dasharray="283" stroke-dashoffset="70" stroke-linecap="round"
+              transform="rotate(-90 247 97)"/>
+            <text x="247" y="88"  fill="#e8e6f0" font-size="26" font-weight="bold" font-family="sans-serif" text-anchor="middle">{current_streak}</text>
+            <text x="247" y="130" fill="#c9a84c" font-size="12" font-family="sans-serif" text-anchor="middle">Current Streak</text>
+            <text x="247" y="148" fill="#3d3c4e" font-size="10" font-family="sans-serif" text-anchor="middle">{streak_label}</text>
+            <line x1="298" y1="40" x2="298" y2="160" stroke="#1f1f28" stroke-width="1"/>
+
+            <!-- Right: Longest Streak -->
+            <text x="395" y="85"  fill="#e8e6f0" font-size="32" font-weight="bold" font-family="sans-serif" text-anchor="middle">{longest}</text>
+            <text x="395" y="115" fill="#7c7a8e" font-size="13" font-family="sans-serif" text-anchor="middle">Longest Streak</text>
+          </svg>'''
+
+          with open("stats/streak.svg", "w") as f:
+            f.write(streak_svg)
+
+          # ── TOP LANGUAGES SVG (by bytes, accurate) ──
+          bars = ""
+          labels = ""
+          x_offset = 25
+          for i, (lang, info) in enumerate(top_langs):
+            pct = info["size"] / total_size
+            bar_w = max(int(pct * 445), 4)
+            color = info["color"]
+            bars += f'<rect x="{x_offset}" y="80" width="{bar_w}" height="8" rx="4" fill="{color}"/>'
+            x_offset += bar_w + 2
+
+          for i, (lang, info) in enumerate(top_langs):
+            pct = round(info["size"] / total_size * 100, 1)
+            color = info["color"]
+            col = i % 3
+            row = i // 3
+            lx = 25 + col * 160
+            ly = 115 + row * 30
+            labels += f'<circle cx="{lx}" cy="{ly}" r="5" fill="{color}"/>'
+            labels += f'<text x="{lx+12}" y="{ly+4}" fill="#7c7a8e" font-size="12" font-family="monospace">{lang} {pct}%</text>'
+
+          langs_svg = f'''<svg width="495" height="195" xmlns="http://www.w3.org/2000/svg">
+            <rect width="495" height="195" rx="10" fill="#09090b" stroke="#1f1f28" stroke-width="1.5"/>
+            <text x="25" y="35" fill="#c9a84c" font-size="16" font-weight="bold" font-family="monospace">Top Languages · AiswaryaRJ</text>
+            <line x1="25" y1="45" x2="470" y2="45" stroke="#1f1f28" stroke-width="1"/>
+            <text x="25" y="68" fill="#3d3c4e" font-size="11" font-family="monospace">based on bytes of code</text>
+            {bars}
+            {labels}
+          </svg>'''
+
+          with open("stats/languages.svg", "w") as f:
+            f.write(langs_svg)
+
+          print(f"Done! Contributions: {total_contribs}, Stars: {stars}, Streak: {current_streak}")
+          EOF
+
+      - name: Commit and Push
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add stats/
+          git commit -m "chore: update stats [skip ci]" || exit 0
+          git push
