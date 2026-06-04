@@ -180,7 +180,7 @@ Core focus on intelligent systems architecture, relational database management, 
 ### ↳ Isometric City
 <p align="center">
   <img src="https://raw.githubusercontent.com/AiswaryaRJ/AiswaryaRJ/main/extras/isometric.svg" alt="Isometric City" />
-</p>
+</p> 
 <br/>
 
 <div align="center">
