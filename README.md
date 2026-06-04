@@ -145,7 +145,7 @@ Core focus on intelligent systems architecture, relational database management, 
   <img src="https://raw.githubusercontent.com/AiswaryaRJ/AiswaryaRJ/main/stats/stats.svg" alt="GitHub Stats" />
 </p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/AiswaryaRJ/AiswaryaRJ/main/stats/streak.svg" alt="GitHub Streak" />
+  <img src="https://cdn.statically.io/gh/AiswaryaRJ/AiswaryaRJ/main/stats/streak.svg" />
 </p>
 
 <p align="center">
