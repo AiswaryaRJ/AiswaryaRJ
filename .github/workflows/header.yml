@@ -16,7 +16,8 @@ jobs:
         run: |
           mkdir -p header
           python3 << 'EOF'
-          import math
+          import math, random
+          random.seed(42)
 
           def hex_path(cx, cy, r):
             pts = [(cx + r*math.cos(math.pi/180*(60*i-30)), cy + r*math.sin(math.pi/180*(60*i-30))) for i in range(6)]
@@ -24,7 +25,6 @@ jobs:
 
           geo = ""
 
-          # corners only — top-left, top-right, bottom-left, bottom-right
           # top-left cluster
           geo += f'<path d="{hex_path(40,35,30)}" fill="none" stroke="#c9a84c" stroke-width="1" opacity="0.35"/>'
           geo += f'<path d="{hex_path(85,20,16)}" fill="none" stroke="#c9a84c" stroke-width="0.8" opacity="0.25"/>'
@@ -57,6 +57,37 @@ jobs:
           geo += '<line x1="1200" y1="165" x2="1070" y2="220" stroke="#c9a84c" stroke-width="0.6" opacity="0.2"/>'
           geo += '<line x1="1200" y1="110" x2="1120" y2="220" stroke="#c9a84c" stroke-width="0.5" opacity="0.12"/>'
 
+          # particles along 4 edges only
+          particles = ""
+          # top edge
+          for _ in range(30):
+            x = random.randint(150, 1050)
+            y = random.randint(2, 25)
+            r = random.choice([1, 1, 1.5])
+            op = round(random.uniform(0.15, 0.35), 2)
+            particles += f'<circle cx="{x}" cy="{y}" r="{r}" fill="#c9a84c" opacity="{op}"/>'
+          # bottom edge
+          for _ in range(30):
+            x = random.randint(150, 1050)
+            y = random.randint(195, 218)
+            r = random.choice([1, 1, 1.5])
+            op = round(random.uniform(0.15, 0.35), 2)
+            particles += f'<circle cx="{x}" cy="{y}" r="{r}" fill="#c9a84c" opacity="{op}"/>'
+          # left edge
+          for _ in range(15):
+            x = random.randint(2, 25)
+            y = random.randint(30, 190)
+            r = random.choice([1, 1, 1.5])
+            op = round(random.uniform(0.15, 0.3), 2)
+            particles += f'<circle cx="{x}" cy="{y}" r="{r}" fill="#c9a84c" opacity="{op}"/>'
+          # right edge
+          for _ in range(15):
+            x = random.randint(1175, 1198)
+            y = random.randint(30, 190)
+            r = random.choice([1, 1, 1.5])
+            op = round(random.uniform(0.15, 0.3), 2)
+            particles += f'<circle cx="{x}" cy="{y}" r="{r}" fill="#c9a84c" opacity="{op}"/>'
+
           svg = f'''<svg width="1200" height="220" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="divider" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -72,6 +103,9 @@ jobs:
 
             <!-- corner geometrics -->
             {geo}
+
+            <!-- edge particles -->
+            {particles}
 
             <!-- name -->
             <text x="600" y="102" text-anchor="middle"
