@@ -1,5 +1,28 @@
-Payment required
-
-DEPLOYMENT_DISABLED
-
-iad1::z52wk-1780550369224-e9df49928612
+<svg width="720" height="150" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="150" fill="#09090b"/>
+  
+  <g transform="translate(10, 10)">
+    <rect width="160" height="130" rx="10" fill="#1a1a2e" stroke="#c9a84c" stroke-width="1.5"/>
+    <text x="80" y="40" text-anchor="middle" font-size="28">⭐</text>
+    <text x="80" y="75" text-anchor="middle" fill="#c9a84c" font-size="22" font-weight="bold" font-family="monospace">1</text>
+    <text x="80" y="100" text-anchor="middle" fill="#7c7a8e" font-size="13" font-family="monospace">Stars</text>
+  </g>
+  <g transform="translate(185, 10)">
+    <rect width="160" height="130" rx="10" fill="#1a1a2e" stroke="#c9a84c" stroke-width="1.5"/>
+    <text x="80" y="40" text-anchor="middle" font-size="28">🍴</text>
+    <text x="80" y="75" text-anchor="middle" fill="#c9a84c" font-size="22" font-weight="bold" font-family="monospace">0</text>
+    <text x="80" y="100" text-anchor="middle" fill="#7c7a8e" font-size="13" font-family="monospace">Forks</text>
+  </g>
+  <g transform="translate(360, 10)">
+    <rect width="160" height="130" rx="10" fill="#1a1a2e" stroke="#c9a84c" stroke-width="1.5"/>
+    <text x="80" y="40" text-anchor="middle" font-size="28">👥</text>
+    <text x="80" y="75" text-anchor="middle" fill="#c9a84c" font-size="22" font-weight="bold" font-family="monospace">5</text>
+    <text x="80" y="100" text-anchor="middle" fill="#7c7a8e" font-size="13" font-family="monospace">Followers</text>
+  </g>
+  <g transform="translate(535, 10)">
+    <rect width="160" height="130" rx="10" fill="#1a1a2e" stroke="#c9a84c" stroke-width="1.5"/>
+    <text x="80" y="40" text-anchor="middle" font-size="28">📦</text>
+    <text x="80" y="75" text-anchor="middle" fill="#c9a84c" font-size="22" font-weight="bold" font-family="monospace">17</text>
+    <text x="80" y="100" text-anchor="middle" fill="#7c7a8e" font-size="13" font-family="monospace">Repos</text>
+  </g>
+</svg>
