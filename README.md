@@ -1,7 +1,7 @@
 <!-- Header Banner -->
 <div align="center">
   <img src="https://raw.githubusercontent.com/AiswaryaRJ/AiswaryaRJ/main/header/banner.svg" width="100%" alt="Banner" />
-</div> 
+</div>
 <br/>
 
 <!-- Status & Links -->
