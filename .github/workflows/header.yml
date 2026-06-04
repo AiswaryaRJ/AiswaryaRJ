@@ -18,49 +18,52 @@ jobs:
           python3 << 'EOF'
           import math
 
-          # geometric shapes only
-          geo = ""
-
-          # hexagons
           def hex_path(cx, cy, r):
             pts = [(cx + r*math.cos(math.pi/180*(60*i-30)), cy + r*math.sin(math.pi/180*(60*i-30))) for i in range(6)]
             return "M " + " L ".join(f"{x:.1f},{y:.1f}" for x,y in pts) + " Z"
 
+          geo = ""
+
           hexagons = [
-            (80,40,22,0.12),(1120,180,26,0.1),(150,185,14,0.08),
-            (1050,30,18,0.1),(200,30,10,0.07),(1000,195,12,0.08),
-            (350,15,8,0.06),(850,210,10,0.06),(50,150,12,0.07),
-            (1150,90,14,0.08),(500,205,9,0.05),(700,10,11,0.06),
+            (80,40,28,0.35),(1120,180,32,0.3),(150,185,18,0.25),
+            (1050,30,22,0.3),(200,30,14,0.2),(1000,195,16,0.25),
+            (350,15,12,0.2),(850,210,14,0.2),(50,150,16,0.22),
+            (1150,90,18,0.28),(500,205,12,0.18),(700,10,14,0.2),
+            (300,110,10,0.15),(900,100,12,0.18),(600,200,10,0.15),
           ]
           for cx,cy,r,op in hexagons:
-            geo += f'<path d="{hex_path(cx,cy,r)}" fill="none" stroke="#c9a84c" stroke-width="0.8" opacity="{op}"/>'
+            geo += f'<path d="{hex_path(cx,cy,r)}" fill="none" stroke="#c9a84c" stroke-width="1.2" opacity="{op}"/>'
 
-          # triangles
           triangles = [
-            "M 550,5 L 570,5 L 560,22 Z",
-            "M 620,205 L 645,205 L 632,188 Z",
-            "M 130,100 L 150,80 L 170,100 Z",
-            "M 1030,110 L 1055,90 L 1080,110 Z",
-            "M 400,195 L 418,195 L 409,180 Z",
-            "M 780,8 L 800,8 L 790,25 Z",
+            ("M 550,5 L 578,5 L 564,28 Z", 0.22),
+            ("M 620,205 L 652,205 L 636,182 Z", 0.2),
+            ("M 120,95 L 148,70 L 176,95 Z", 0.2),
+            ("M 1024,105 L 1055,78 L 1086,105 Z", 0.2),
+            ("M 390,192 L 415,192 L 402,172 Z", 0.18),
+            ("M 775,5 L 802,5 L 788,28 Z", 0.18),
+            ("M 950,15 L 972,15 L 961,35 Z", 0.15),
+            ("M 240,200 L 265,200 L 252,180 Z", 0.15),
           ]
-          for t in triangles:
-            geo += f'<path d="{t}" fill="none" stroke="#c9a84c" stroke-width="0.7" opacity="0.1"/>'
+          for t, op in triangles:
+            geo += f'<path d="{t}" fill="none" stroke="#c9a84c" stroke-width="1" opacity="{op}"/>'
 
-          # diagonal accent lines
-          geo += '<line x1="0" y1="60" x2="120" y2="0" stroke="#c9a84c" stroke-width="0.5" opacity="0.1"/>'
-          geo += '<line x1="1080" y1="0" x2="1200" y2="70" stroke="#c9a84c" stroke-width="0.5" opacity="0.1"/>'
-          geo += '<line x1="0" y1="160" x2="100" y2="220" stroke="#c9a84c" stroke-width="0.5" opacity="0.1"/>'
-          geo += '<line x1="1100" y1="220" x2="1200" y2="150" stroke="#c9a84c" stroke-width="0.5" opacity="0.1"/>'
+          geo += '<line x1="0" y1="55" x2="130" y2="0" stroke="#c9a84c" stroke-width="0.8" opacity="0.2"/>'
+          geo += '<line x1="1070" y1="0" x2="1200" y2="75" stroke="#c9a84c" stroke-width="0.8" opacity="0.2"/>'
+          geo += '<line x1="0" y1="165" x2="110" y2="220" stroke="#c9a84c" stroke-width="0.8" opacity="0.2"/>'
+          geo += '<line x1="1090" y1="220" x2="1200" y2="145" stroke="#c9a84c" stroke-width="0.8" opacity="0.2"/>'
 
-          # grid dots (matrix feel)
           matrix = ""
           for x in range(0, 1200, 40):
             for y in range(0, 220, 40):
-              matrix += f'<circle cx="{x}" cy="{y}" r="0.8" fill="#c9a84c" opacity="0.07"/>'
+              matrix += f'<circle cx="{x}" cy="{y}" r="0.8" fill="#c9a84c" opacity="0.1"/>'
 
           svg = f'''<svg width="1200" height="220" xmlns="http://www.w3.org/2000/svg">
             <defs>
+              <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#09090b"/>
+                <stop offset="50%" style="stop-color:#1a1608"/>
+                <stop offset="100%" style="stop-color:#09090b"/>
+              </linearGradient>
               <linearGradient id="divider" x1="0%" y1="0%" x2="100%" y2="0%">
                 <stop offset="0%" style="stop-color:#09090b"/>
                 <stop offset="30%" style="stop-color:#c9a84c"/>
@@ -69,8 +72,8 @@ jobs:
               </linearGradient>
             </defs>
 
-            <!-- background -->
-            <rect width="1200" height="220" fill="#09090b"/>
+            <!-- background with gold tint -->
+            <rect width="1200" height="220" fill="url(#bg)"/>
 
             <!-- matrix dots -->
             {matrix}
