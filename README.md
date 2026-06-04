@@ -156,7 +156,7 @@ Core focus on intelligent systems architecture, relational database management, 
 
 ### ↳ GitHub Trophies
 <p align="center">
-  <img src="https://raw.githubusercontent.com/AiswaryaRJ/AiswaryaRJ/main/trophies/AiswaryaRJ.png" alt="GitHub Trophies" />
+  <img src="https://raw.githubusercontent.com/AiswaryaRJ/AiswaryaRJ/main/trophies/AiswaryaRJ.svg" alt="GitHub Trophies" />
 </p>
 
 ### ↳ GitHub Contribution Snake
