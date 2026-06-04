@@ -172,6 +172,17 @@ Core focus on intelligent systems architecture, relational database management, 
 </p>
 
 <br/>
+### ↳ Pacman
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AiswaryaRJ/AiswaryaRJ/main/extras/pacman.svg" alt="Pacman" />
+</p>
+
+### ↳ Isometric City
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AiswaryaRJ/AiswaryaRJ/main/extras/isometric.svg" alt="Isometric City" />
+</p>
+<br/>
+
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=AiswaryaRJ&style=for-the-badge&color=c9a84c&labelColor=09090b&label=PROFILE+VIEWS" alt="Profile Views" />
 </div>
