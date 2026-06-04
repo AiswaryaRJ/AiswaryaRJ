@@ -12,9 +12,9 @@
   <circle cx="247" cy="90" r="50" fill="none" stroke="#c9a84c" stroke-width="6"
     stroke-dasharray="314" stroke-dashoffset="78" stroke-linecap="round"
     transform="rotate(-90 247 90)"/>
-  <text x="247" y="82"  fill="#e8e6f0" font-size="28" font-weight="bold" font-family="sans-serif" text-anchor="middle">8</text>
-  <text x="247" y="155" fill="#c9a84c" font-size="12" font-family="sans-serif" text-anchor="middle">Current Streak</text>
-  <text x="247" y="172" fill="#3d3c4e" font-size="10" font-family="sans-serif" text-anchor="middle">May 28 – Jun 4</text>
+  <text x="247" y="78"  fill="#e8e6f0" font-size="28" font-weight="bold" font-family="sans-serif" text-anchor="middle">8</text>
+  <text x="247" y="98"  fill="#c9a84c" font-size="11" font-family="sans-serif" text-anchor="middle">Current Streak</text>
+  <text x="247" y="158" fill="#3d3c4e" font-size="10" font-family="sans-serif" text-anchor="middle">May 28 – Jun 4</text>
   <line x1="330" y1="30" x2="330" y2="165" stroke="#1f1f28" stroke-width="1"/>
 
   <!-- Right: Longest Streak (col center x=412) -->
