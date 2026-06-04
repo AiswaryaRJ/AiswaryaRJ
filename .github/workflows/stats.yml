@@ -3,7 +3,6 @@ on:
   schedule:
     - cron: "0 */6 * * *"
   workflow_dispatch:
-
 jobs:
   stats:
     runs-on: ubuntu-latest
@@ -11,7 +10,6 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-
       - name: Generate Stats SVG
         env:
           USERNAME: AiswaryaRJ
@@ -41,27 +39,81 @@ jobs:
           followers = user.get("followers", 0)
           public_repos = user.get("public_repos", 0)
 
+          # ── STATS SVG ──
           svg = f'''<svg width="495" height="195" xmlns="http://www.w3.org/2000/svg">
             <rect width="495" height="195" rx="10" fill="#09090b" stroke="#1f1f28" stroke-width="1.5"/>
             <text x="25" y="35" fill="#c9a84c" font-size="16" font-weight="bold" font-family="monospace">GitHub Stats · AiswaryaRJ</text>
             <line x1="25" y1="45" x2="470" y2="45" stroke="#1f1f28" stroke-width="1"/>
-
             <text x="25" y="80" fill="#7c7a8e" font-size="13" font-family="monospace">⭐ Total Stars</text>
             <text x="470" y="80" fill="#e8e6f0" font-size="13" font-family="monospace" text-anchor="end">{stars}</text>
-
             <text x="25" y="110" fill="#7c7a8e" font-size="13" font-family="monospace">📦 Public Repos</text>
             <text x="470" y="110" fill="#e8e6f0" font-size="13" font-family="monospace" text-anchor="end">{public_repos}</text>
-
             <text x="25" y="140" fill="#7c7a8e" font-size="13" font-family="monospace">🍴 Total Forks</text>
             <text x="470" y="140" fill="#e8e6f0" font-size="13" font-family="monospace" text-anchor="end">{forks}</text>
-
             <text x="25" y="170" fill="#7c7a8e" font-size="13" font-family="monospace">👥 Followers</text>
             <text x="470" y="170" fill="#e8e6f0" font-size="13" font-family="monospace" text-anchor="end">{followers}</text>
           </svg>'''
 
           with open("stats/stats.svg", "w") as f:
             f.write(svg)
-          print("Stats SVG generated!")
+
+          # ── TOP LANGUAGES SVG ──
+          lang_count = {}
+          for repo in repos:
+            if repo.get("language"):
+              lang = repo["language"]
+              lang_count[lang] = lang_count.get(lang, 0) + 1
+
+          top_langs = sorted(lang_count.items(), key=lambda x: x[1], reverse=True)[:6]
+          total = sum(c for _, c in top_langs) or 1
+
+          lang_colors = {
+            "Python": "#3572A5",
+            "JavaScript": "#f1e05a",
+            "TypeScript": "#2b7489",
+            "C": "#555555",
+            "C++": "#f34b7d",
+            "Java": "#b07219",
+            "HTML": "#e34c26",
+            "CSS": "#563d7c",
+            "Shell": "#89e051",
+            "SQL": "#e38c00",
+          }
+
+          bars = ""
+          labels = ""
+          x_offset = 25
+          for i, (lang, count) in enumerate(top_langs):
+            pct = count / total
+            bar_w = int(pct * 445)
+            color = lang_colors.get(lang, "#c9a84c")
+            bars += f'<rect x="{x_offset}" y="80" width="{bar_w}" height="8" rx="4" fill="{color}"/>'
+            x_offset += bar_w + 2
+
+          dot_x = 25
+          for i, (lang, count) in enumerate(top_langs):
+            pct = round(count / total * 100, 1)
+            color = lang_colors.get(lang, "#c9a84c")
+            col = i % 3
+            row = i // 3
+            lx = 25 + col * 160
+            ly = 115 + row * 30
+            labels += f'<circle cx="{lx}" cy="{ly}" r="5" fill="{color}"/>'
+            labels += f'<text x="{lx+12}" y="{ly+4}" fill="#7c7a8e" font-size="12" font-family="monospace">{lang} {pct}%</text>'
+
+          langs_svg = f'''<svg width="495" height="195" xmlns="http://www.w3.org/2000/svg">
+            <rect width="495" height="195" rx="10" fill="#09090b" stroke="#1f1f28" stroke-width="1.5"/>
+            <text x="25" y="35" fill="#c9a84c" font-size="16" font-weight="bold" font-family="monospace">Top Languages · AiswaryaRJ</text>
+            <line x1="25" y1="45" x2="470" y2="45" stroke="#1f1f28" stroke-width="1"/>
+            <text x="25" y="68" fill="#3d3c4e" font-size="11" font-family="monospace">based on repo count</text>
+            {bars}
+            {labels}
+          </svg>'''
+
+          with open("stats/languages.svg", "w") as f:
+            f.write(langs_svg)
+
+          print("Stats and languages generated!")
           EOF
 
       - name: Commit and Push
