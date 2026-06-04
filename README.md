@@ -172,6 +172,9 @@ Core focus on intelligent systems architecture, relational database management, 
 </p>
 
 <br/>
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=AiswaryaRJ&style=for-the-badge&color=c9a84c&labelColor=09090b&label=PROFILE+VIEWS" alt="Profile Views" />
+</div>
 
 <div align="center">
   <sub><code>// building with precision · open to opportunities · github.com/AiswaryaRJ</code></sub>
