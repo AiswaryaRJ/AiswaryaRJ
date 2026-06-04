@@ -12,14 +12,62 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install rsvg-convert
-        run: sudo apt-get install -y librsvg2-bin
-
-      - name: Download Trophy SVG and convert to PNG
+      - name: Fetch GitHub stats and generate trophy SVG
+        env:
+          USERNAME: AiswaryaRJ
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           mkdir -p trophies
-          curl -o trophies/AiswaryaRJ.svg "https://github-profile-trophy.vercel.app/?username=AiswaryaRJ&theme=darkhub&no-frame=true&no-bg=true&column=7"
-          rsvg-convert trophies/AiswaryaRJ.svg -o trophies/AiswaryaRJ.png
+          python3 << 'EOF'
+          import urllib.request, json, os
+
+          token = os.environ["GITHUB_TOKEN"]
+          username = os.environ["USERNAME"]
+
+          req = urllib.request.Request(
+            f"https://api.github.com/users/{username}",
+            headers={"Authorization": f"token {token}", "User-Agent": "trophy-gen"}
+          )
+          user = json.loads(urllib.request.urlopen(req).read())
+
+          repos_req = urllib.request.Request(
+            f"https://api.github.com/users/{username}/repos?per_page=100",
+            headers={"Authorization": f"token {token}", "User-Agent": "trophy-gen"}
+          )
+          repos = json.loads(urllib.request.urlopen(repos_req).read())
+
+          stars = sum(r.get("stargazers_count", 0) for r in repos)
+          forks = sum(r.get("forks_count", 0) for r in repos)
+          followers = user.get("followers", 0)
+          public_repos = user.get("public_repos", 0)
+
+          trophies = [
+            ("⭐", "Stars", stars),
+            ("🍴", "Forks", forks),
+            ("👥", "Followers", followers),
+            ("📦", "Repos", public_repos),
+          ]
+
+          cards = ""
+          for i, (icon, label, value) in enumerate(trophies):
+            x = 10 + i * 175
+            cards += f'''
+            <g transform="translate({x}, 10)">
+              <rect width="160" height="130" rx="10" fill="#1a1a2e" stroke="#c9a84c" stroke-width="1.5"/>
+              <text x="80" y="40" text-anchor="middle" font-size="28">{icon}</text>
+              <text x="80" y="75" text-anchor="middle" fill="#c9a84c" font-size="22" font-weight="bold" font-family="monospace">{value}</text>
+              <text x="80" y="100" text-anchor="middle" fill="#7c7a8e" font-size="13" font-family="monospace">{label}</text>
+            </g>'''
+
+          svg = f'''<svg width="720" height="150" xmlns="http://www.w3.org/2000/svg">
+            <rect width="720" height="150" fill="#09090b"/>
+            {cards}
+          </svg>'''
+
+          with open("trophies/AiswaryaRJ.svg", "w") as f:
+            f.write(svg)
+          print("Trophy SVG generated!")
+          EOF
 
       - name: Commit and Push
         run: |
