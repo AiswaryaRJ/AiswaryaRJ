@@ -157,25 +157,25 @@ jobs:
           streak_svg = f'''<svg width="495" height="195" xmlns="http://www.w3.org/2000/svg">
             <rect width="495" height="195" rx="10" fill="#09090b" stroke="#1f1f28" stroke-width="1.5"/>
 
-            <!-- Left: Total Contributions -->
-            <text x="123" y="85"  fill="#e8e6f0" font-size="32" font-weight="bold" font-family="sans-serif" text-anchor="middle">{total_contribs}</text>
-            <text x="123" y="115" fill="#7c7a8e" font-size="13" font-family="sans-serif" text-anchor="middle">Total Contributions</text>
-            <text x="123" y="140" fill="#3d3c4e" font-size="11" font-family="sans-serif" text-anchor="middle">Sep 12, 2024 – Present</text>
-            <line x1="196" y1="40" x2="196" y2="160" stroke="#1f1f28" stroke-width="1"/>
+            <!-- Left: Total Contributions (col center x=82) -->
+            <text x="82" y="82"  fill="#e8e6f0" font-size="32" font-weight="bold" font-family="sans-serif" text-anchor="middle">{total_contribs}</text>
+            <text x="82" y="108" fill="#7c7a8e" font-size="12" font-family="sans-serif" text-anchor="middle">Total Contributions</text>
+            <text x="82" y="128" fill="#3d3c4e" font-size="10" font-family="sans-serif" text-anchor="middle">Sep 12, 2024 – Present</text>
+            <line x1="164" y1="30" x2="164" y2="165" stroke="#1f1f28" stroke-width="1"/>
 
-            <!-- Center: Current Streak ring -->
-            <circle cx="247" cy="97" r="45" fill="none" stroke="#1f1f28" stroke-width="6"/>
-            <circle cx="247" cy="97" r="45" fill="none" stroke="#c9a84c" stroke-width="6"
-              stroke-dasharray="283" stroke-dashoffset="70" stroke-linecap="round"
-              transform="rotate(-90 247 97)"/>
-            <text x="247" y="88"  fill="#e8e6f0" font-size="26" font-weight="bold" font-family="sans-serif" text-anchor="middle">{current_streak}</text>
-            <text x="247" y="130" fill="#c9a84c" font-size="12" font-family="sans-serif" text-anchor="middle">Current Streak</text>
-            <text x="247" y="148" fill="#3d3c4e" font-size="10" font-family="sans-serif" text-anchor="middle">{streak_label}</text>
-            <line x1="298" y1="40" x2="298" y2="160" stroke="#1f1f28" stroke-width="1"/>
+            <!-- Center: Current Streak ring (col center x=247) -->
+            <circle cx="247" cy="90" r="50" fill="none" stroke="#1f1f28" stroke-width="6"/>
+            <circle cx="247" cy="90" r="50" fill="none" stroke="#c9a84c" stroke-width="6"
+              stroke-dasharray="314" stroke-dashoffset="78" stroke-linecap="round"
+              transform="rotate(-90 247 90)"/>
+            <text x="247" y="82"  fill="#e8e6f0" font-size="28" font-weight="bold" font-family="sans-serif" text-anchor="middle">{current_streak}</text>
+            <text x="247" y="155" fill="#c9a84c" font-size="12" font-family="sans-serif" text-anchor="middle">Current Streak</text>
+            <text x="247" y="172" fill="#3d3c4e" font-size="10" font-family="sans-serif" text-anchor="middle">{streak_label}</text>
+            <line x1="330" y1="30" x2="330" y2="165" stroke="#1f1f28" stroke-width="1"/>
 
-            <!-- Right: Longest Streak -->
-            <text x="395" y="85"  fill="#e8e6f0" font-size="32" font-weight="bold" font-family="sans-serif" text-anchor="middle">{longest}</text>
-            <text x="395" y="115" fill="#7c7a8e" font-size="13" font-family="sans-serif" text-anchor="middle">Longest Streak</text>
+            <!-- Right: Longest Streak (col center x=412) -->
+            <text x="412" y="82"  fill="#e8e6f0" font-size="32" font-weight="bold" font-family="sans-serif" text-anchor="middle">{longest}</text>
+            <text x="412" y="108" fill="#7c7a8e" font-size="12" font-family="sans-serif" text-anchor="middle">Longest Streak</text>
           </svg>'''
 
           with open("stats/streak.svg", "w") as f:
