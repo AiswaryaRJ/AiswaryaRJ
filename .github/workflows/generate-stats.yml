@@ -46,7 +46,7 @@ jobs:
                   }
                 }
               }
-              contributionsCollection {
+              allTime: contributionsCollection(from: "2024-09-12T00:00:00Z") {
                 contributionCalendar {
                   totalContributions
                   weeks {
@@ -55,6 +55,11 @@ jobs:
                       date
                     }
                   }
+                }
+              }
+              thisYear: contributionsCollection {
+                contributionCalendar {
+                  totalContributions
                 }
               }
             }
