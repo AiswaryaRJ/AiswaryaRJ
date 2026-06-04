@@ -18,6 +18,7 @@ jobs:
           mkdir -p stats
           python3 << 'EOF'
           import urllib.request, json, os
+          from datetime import datetime, timedelta
 
           token = os.environ["GITHUB_TOKEN"]
           username = os.environ["USERNAME"]
@@ -28,54 +29,64 @@ jobs:
             "User-Agent": "stats-gen"
           }
 
-          # ── GraphQL: contributions, stars, repos, followers ──
-          query = """
-          query($login: String!) {
-            user(login: $login) {
-              followers { totalCount }
-              repositories(ownerAffiliations: OWNER, first: 100) {
+          current_year = datetime.utcnow().year
+          join_year = 2024
+          join_date = "2024-09-12"
+
+          # ── Build year fragments dynamically ──
+          year_fragments = ""
+          for yr in range(join_year, current_year + 1):
+              if yr == join_year:
+                  from_date = f"{join_date}T00:00:00Z"
+              else:
+                  from_date = f"{yr}-01-01T00:00:00Z"
+              
+              if yr < current_year:
+                  to_date = f"{yr}-12-31T23:59:59Z"
+                  year_fragments += f"""
+                year{yr}: contributionsCollection(from: "{from_date}", to: "{to_date}") {{
+                  contributionCalendar {{ totalContributions }}
+                }}"""
+              else:
+                  year_fragments += f"""
+                year{yr}: contributionsCollection(from: "{from_date}") {{
+                  contributionCalendar {{
+                    totalContributions
+                    weeks {{
+                      contributionDays {{
+                        contributionCount
+                        date
+                      }}
+                    }}
+                  }}
+                }}"""
+
+          query = f"""
+          query($login: String!) {{
+            user(login: $login) {{
+              followers {{ totalCount }}
+              repositories(ownerAffiliations: OWNER, first: 100) {{
                 totalCount
-                nodes {
+                nodes {{
                   stargazerCount
                   forkCount
-                  languages(first: 10, orderBy: {field: SIZE, direction: DESC}) {
-                    edges {
+                  languages(first: 10, orderBy: {{field: SIZE, direction: DESC}}) {{
+                    edges {{
                       size
-                      node { name color }
-                    }
-                  }
-                }
-              }
-              year2024: contributionsCollection(from: "2024-09-12T00:00:00Z", to: "2024-12-31T23:59:59Z") {
-                contributionCalendar {
-                  totalContributions
-                }
-              }
-              year2025: contributionsCollection(from: "2025-01-01T00:00:00Z", to: "2025-12-31T23:59:59Z") {
-                contributionCalendar {
-                  totalContributions
-                }
-              }
-              year2026: contributionsCollection(from: "2026-01-01T00:00:00Z") {
-                contributionCalendar {
-                  totalContributions
-                  weeks {
-                    contributionDays {
-                      contributionCount
-                      date
-                    }
-                  }
-                }
-              }
-              thisYear: contributionsCollection(from: "2026-01-01T00:00:00Z") {
-                contributionCalendar {
-                  totalContributions
-                }
-              }
-            }
-          }
+                      node {{ name color }}
+                    }}
+                  }}
+                }}
+              }}
+              {year_fragments}
+              thisYear: contributionsCollection(from: "{current_year}-01-01T00:00:00Z") {{
+                contributionCalendar {{ totalContributions }}
+              }}
+            }}
+          }}
           """
 
+          # ── Send GraphQL Request ──
           payload = json.dumps({"query": query, "variables": {"login": username}}).encode()
           req = urllib.request.Request(
             "https://api.github.com/graphql",
@@ -91,17 +102,14 @@ jobs:
           stars        = sum(r["stargazerCount"] for r in user["repositories"]["nodes"])
           forks        = sum(r["forkCount"]       for r in user["repositories"]["nodes"])
 
-          total_contribs = (
-            user["year2024"]["contributionCalendar"]["totalContributions"] +
-            user["year2025"]["contributionCalendar"]["totalContributions"] +
-            user["year2026"]["contributionCalendar"]["totalContributions"]
+          total_contribs = sum(
+              user[f"year{yr}"]["contributionCalendar"]["totalContributions"]
+              for yr in range(join_year, current_year + 1)
           )
           this_year_contribs = user["thisYear"]["contributionCalendar"]["totalContributions"]
-          calendar = user["year2026"]["contributionCalendar"]
+          calendar = user[f"year{current_year}"]["contributionCalendar"]
 
           # ── Streak calculation ──
-          from datetime import datetime, timedelta
-
           all_days = []
           for week in calendar["weeks"]:
             for day in week["contributionDays"]:
@@ -178,13 +186,11 @@ jobs:
           streak_svg = f'''<svg width="495" height="195" xmlns="http://www.w3.org/2000/svg">
             <rect width="495" height="195" rx="10" fill="#09090b" stroke="#1f1f28" stroke-width="1.5"/>
 
-            <!-- Left: Total Contributions (col center x=82) -->
             <text x="82" y="82"  fill="#e8e6f0" font-size="32" font-weight="bold" font-family="sans-serif" text-anchor="middle">{total_contribs}</text>
             <text x="82" y="108" fill="#7c7a8e" font-size="12" font-family="sans-serif" text-anchor="middle">Total Contributions</text>
             <text x="82" y="128" fill="#3d3c4e" font-size="10" font-family="sans-serif" text-anchor="middle">Sep 12, 2024 – Present</text>
             <line x1="164" y1="30" x2="164" y2="165" stroke="#1f1f28" stroke-width="1"/>
 
-            <!-- Center: Current Streak ring (col center x=247) -->
             <circle cx="247" cy="90" r="50" fill="none" stroke="#1f1f28" stroke-width="6"/>
             <circle cx="247" cy="90" r="50" fill="none" stroke="#c9a84c" stroke-width="6"
               stroke-dasharray="314" stroke-dashoffset="78" stroke-linecap="round"
@@ -194,7 +200,6 @@ jobs:
             <text x="247" y="158" fill="#3d3c4e" font-size="10" font-family="sans-serif" text-anchor="middle">{streak_label}</text>
             <line x1="330" y1="30" x2="330" y2="165" stroke="#1f1f28" stroke-width="1"/>
 
-            <!-- Right: Longest Streak (col center x=412) -->
             <text x="412" y="82"  fill="#e8e6f0" font-size="32" font-weight="bold" font-family="sans-serif" text-anchor="middle">{longest}</text>
             <text x="412" y="108" fill="#7c7a8e" font-size="12" font-family="sans-serif" text-anchor="middle">Longest Streak</text>
           </svg>'''
@@ -202,7 +207,7 @@ jobs:
           with open("stats/streak.svg", "w") as f:
             f.write(streak_svg)
 
-          # ── TOP LANGUAGES SVG (by bytes, accurate) ──
+          # ── TOP LANGUAGES SVG ──
           bars = ""
           labels = ""
           x_offset = 25
