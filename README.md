@@ -14,8 +14,7 @@
 
 <br/>
 
-![Typing SVG](https://readme-typing-svg.demolab.com?font=DM+Mono&weight=400&size=13&duration=4000&pause=1200&color=7C7A8E&center=true&vCenter=true&multiline=true&width=700&height=52&lines=Building+intelligent+systems+from+raw+data+to+actionable+intelligence...;Vector+Search+·+Multi-Agent+Frameworks+·RAG+Architecture)
-
+![Typing SVG](https://readme-typing-svg.demolab.com?font=DM+Mono&weight=400&size=13&duration=4000&pause=1200&color=7C7A8E&center=true&vCenter=true&multiline=true&width=700&height=52&lines=CSE+undergrad+specialising+in+AI+%26+Machine+Learning...;Building+Semantic+Search+·+Multi-Agent+Systems+·+Python)
 </div>
 
 ---
