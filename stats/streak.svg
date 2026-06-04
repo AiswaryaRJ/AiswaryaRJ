@@ -2,7 +2,7 @@
   <rect width="495" height="195" rx="10" fill="#09090b" stroke="#1f1f28" stroke-width="1.5"/>
 
   <!-- Left: Total Contributions (col center x=82) -->
-  <text x="82" y="82"  fill="#e8e6f0" font-size="32" font-weight="bold" font-family="sans-serif" text-anchor="middle">270</text>
+  <text x="82" y="82"  fill="#e8e6f0" font-size="32" font-weight="bold" font-family="sans-serif" text-anchor="middle">275</text>
   <text x="82" y="108" fill="#7c7a8e" font-size="12" font-family="sans-serif" text-anchor="middle">Total Contributions</text>
   <text x="82" y="128" fill="#3d3c4e" font-size="10" font-family="sans-serif" text-anchor="middle">Sep 12, 2024 – Present</text>
   <line x1="164" y1="30" x2="164" y2="165" stroke="#1f1f28" stroke-width="1"/>
