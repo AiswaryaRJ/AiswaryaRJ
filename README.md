@@ -170,7 +170,7 @@ Core focus on intelligent systems architecture, relational database management, 
 
 ### ↳ Top Languages
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AiswaryaRJ&layout=compact&hide_border=false&bg_color=09090b&title_color=c9a84c&text_color=7c7a8e&border_color=1f1f28&langs_count=8" alt="Top Languages" />
+  <img src="https://raw.githubusercontent.com/AiswaryaRJ/AiswaryaRJ/main/stats/languages.svg" alt="Top Languages" />
 </p>
 
 <br/>
