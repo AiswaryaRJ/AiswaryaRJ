@@ -12,7 +12,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generate Header SVG
+      - name: Install rsvg-convert
+        run: sudo apt-get install -y librsvg2-bin
+
+      - name: Generate Header SVG and PNG
         run: |
           mkdir -p header
           python3 << 'EOF'
@@ -57,30 +60,26 @@ jobs:
           geo += '<line x1="1200" y1="165" x2="1070" y2="220" stroke="#c9a84c" stroke-width="0.6" opacity="0.2"/>'
           geo += '<line x1="1200" y1="110" x2="1120" y2="220" stroke="#c9a84c" stroke-width="0.5" opacity="0.12"/>'
 
-          # particles along 4 edges only
           particles = ""
-          # top edge
           for _ in range(30):
+            import random
             x = random.randint(150, 1050)
             y = random.randint(2, 25)
             r = random.choice([1, 1, 1.5])
             op = round(random.uniform(0.15, 0.35), 2)
             particles += f'<circle cx="{x}" cy="{y}" r="{r}" fill="#c9a84c" opacity="{op}"/>'
-          # bottom edge
           for _ in range(30):
             x = random.randint(150, 1050)
             y = random.randint(195, 218)
             r = random.choice([1, 1, 1.5])
             op = round(random.uniform(0.15, 0.35), 2)
             particles += f'<circle cx="{x}" cy="{y}" r="{r}" fill="#c9a84c" opacity="{op}"/>'
-          # left edge
           for _ in range(15):
             x = random.randint(2, 25)
             y = random.randint(30, 190)
             r = random.choice([1, 1, 1.5])
             op = round(random.uniform(0.15, 0.3), 2)
             particles += f'<circle cx="{x}" cy="{y}" r="{r}" fill="#c9a84c" opacity="{op}"/>'
-          # right edge
           for _ in range(15):
             x = random.randint(1175, 1198)
             y = random.randint(30, 190)
@@ -97,35 +96,25 @@ jobs:
                 <stop offset="100%" style="stop-color:#09090b"/>
               </linearGradient>
             </defs>
-
-            <!-- background -->
             <rect width="1200" height="220" fill="#09090b"/>
-
-            <!-- corner geometrics -->
             {geo}
-
-            <!-- edge particles -->
             {particles}
-
-            <!-- name -->
             <text x="600" y="102" text-anchor="middle"
               fill="#e8e6f0" font-size="52"
               font-family="Georgia, serif" font-weight="bold">Aiswarya Rose Jacob</text>
-
-            <!-- gold divider -->
             <line x1="200" y1="122" x2="1000" y2="122" stroke="url(#divider)" stroke-width="1"/>
-
-            <!-- subtitle -->
             <text x="600" y="152" text-anchor="middle" fill="#7c7a8e"
               font-size="13" font-family="monospace" letter-spacing="5">
-              CSE  ·  AI & ML  ·  BUILDING INTELLIGENT SYSTEMS
+              CSE  ·  AI &amp; ML  ·  BUILDING INTELLIGENT SYSTEMS
             </text>
           </svg>'''
 
           with open("header/banner.svg", "w") as f:
             f.write(svg)
-          print("Header generated!")
+          print("Header SVG generated!")
           EOF
+          rsvg-convert header/banner.svg -w 1200 -o header/banner.png
+          echo "PNG generated!"
 
       - name: Commit and Push
         run: |
