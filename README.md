@@ -1,6 +1,6 @@
 <!-- Header Banner -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:09090b,50:1a1608,100:09090b&height=220&text=Aiswarya%20Rose%20Jacob&fontSize=46&fontColor=e8e6f0&fontAlignY=45&fontAlign=50&desc=AI%20·%20Machine%20Learning%20·%20Systems%20Engineering&descSize=14&descAlignY=63&descColor=c9a84c&animation=fadeIn" width="100%" />
+  <img src="https://raw.githubusercontent.com/AiswaryaRJ/AiswaryaRJ/main/header/banner.svg" width="100%" alt="Banner" />
 </div>
 <br/>
 
