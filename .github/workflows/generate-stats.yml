@@ -183,6 +183,17 @@ jobs:
 
           # ── STREAK SVG ──
           streak_label = f"{fmt_date(streak_start)} – {fmt_date(streak_end)}" if streak_start else "No streak yet"
+
+          # Ring color and fill: gold only when streak > 0, invisible otherwise
+          circumference = 314
+          if current_streak > 0:
+            ring_color = "#c9a84c"
+            fill_ratio = min(current_streak / 30, 1.0)
+            dash_offset = round(circumference * (1 - fill_ratio), 1)
+          else:
+            ring_color = "#1f1f28"
+            dash_offset = circumference
+
           streak_svg = f'''<svg width="495" height="195" xmlns="http://www.w3.org/2000/svg">
             <rect width="495" height="195" rx="10" fill="#09090b" stroke="#1f1f28" stroke-width="1.5"/>
 
@@ -192,8 +203,8 @@ jobs:
             <line x1="164" y1="30" x2="164" y2="165" stroke="#1f1f28" stroke-width="1"/>
 
             <circle cx="247" cy="90" r="50" fill="none" stroke="#1f1f28" stroke-width="6"/>
-            <circle cx="247" cy="90" r="50" fill="none" stroke="#c9a84c" stroke-width="6"
-              stroke-dasharray="314" stroke-dashoffset="78" stroke-linecap="round"
+            <circle cx="247" cy="90" r="50" fill="none" stroke="{ring_color}" stroke-width="6"
+              stroke-dasharray="{circumference}" stroke-dashoffset="{dash_offset}" stroke-linecap="round"
               transform="rotate(-90 247 90)"/>
             <text x="247" y="78"  fill="#e8e6f0" font-size="28" font-weight="bold" font-family="sans-serif" text-anchor="middle">{current_streak}</text>
             <text x="247" y="98"  fill="#c9a84c" font-size="11" font-family="sans-serif" text-anchor="middle">Current Streak</text>
