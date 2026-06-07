@@ -60,24 +60,24 @@ I build systems that think: semantic retrieval pipelines that understand intent,
 <tbody>
 <tr>
 <td>
-<strong>Semantic Local Search</strong>
+<strong><a href="https://github.com/AiswaryaRJ/semantic-local-search">Semantic Local Search</a></strong>
 </td>
 <td>Custom pipeline mapping text into a <strong>384-dimensional vector space</strong> using Sentence-Transformers. Prioritises conceptual intent over keyword matching. Fully local — zero cloud dependency.</td>
 <td><code>Sentence-Transformers</code> <code>Cosine Similarity</code></td>
 </tr>
 <tr>
 <td>
-<strong>Multi-Agent Research System</strong>
+<strong><a href="https://github.com/AiswaryaRJ/multi-agent-research-system">Multi-Agent Research System</a></strong>
 </td>
-<td>Multi-agent framework with <strong>autonomous task routing</strong> and lifecycle state management. Built during Infosys Springboard internship. Modular architecture designed for scalability and reproducibility.</td>
+<td>Multi-agent framework with <strong>autonomous task routing</strong> and lifecycle state management. Planner, Search, and Writer agents operate in sequence with clean boundaries. Built during Infosys Springboard internship.</td>
 <td><code>Python</code> <code>Streamlit</code> <code>Multi-Agent</code></td>
 </tr>
 <tr>
 <td>
-<strong>Pathwise.ai</strong>
+<strong><a href="https://github.com/AiswaryaRJ/pathwise-ai">Pathwise.ai</a></strong>
 </td>
-<td>AI-driven <strong>career path recommendation</strong> engine with explainable decision logic and transparent outcome reasoning. Focuses on interpretability alongside accuracy.</td>
-<td><code>Decision Logic</code> <code>Career AI</code> <code>Python</code></td>
+<td>AI-driven <strong>career path recommendation</strong> engine trained on multiple classifiers — Random Forest and Logistic Regression — with explainable decision logic. Focuses on interpretability alongside accuracy.</td>
+<td><code>Scikit-learn</code> <code>Random Forest</code> <code>Python</code></td>
 </tr>
 </tbody>
 </table>
@@ -117,7 +117,7 @@ I build systems that think: semantic retrieval pipelines that understand intent,
 
 **Virtual Intern — Workflow Automation** &nbsp;·&nbsp; *Infosys Springboard*
 
-Built the Multi-Agent Research System using Python and Streamlit. Explored agent orchestration, application state management, and professional multi-file project structure. First real-world software delivery experience — shipping production-ready code under a defined scope.
+Built the Multi-Agent Research System using Python and Streamlit — a modular pipeline of Planner, Search, and Writer agents with explicit state passing and clean agent boundaries. First real-world software delivery experience, shipping production-ready code under a defined scope.
 
 <br/>
 
