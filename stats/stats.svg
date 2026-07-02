@@ -3,11 +3,11 @@
   <text x="25" y="35" fill="#c9a84c" font-size="16" font-weight="bold" font-family="monospace">GitHub Stats · AiswaryaRJ</text>
   <line x1="25" y1="45" x2="470" y2="45" stroke="#1f1f28" stroke-width="1"/>
   <text x="25" y="80"  fill="#7c7a8e" font-size="13" font-family="monospace">⭐ Total Stars</text>
-  <text x="470" y="80"  fill="#e8e6f0" font-size="13" font-family="monospace" text-anchor="end">3</text>
+  <text x="470" y="80"  fill="#e8e6f0" font-size="13" font-family="monospace" text-anchor="end">4</text>
   <text x="25" y="110" fill="#7c7a8e" font-size="13" font-family="monospace">📦 Public Repos</text>
   <text x="470" y="110" fill="#e8e6f0" font-size="13" font-family="monospace" text-anchor="end">21</text>
   <text x="25" y="140" fill="#7c7a8e" font-size="13" font-family="monospace">🔥 Contributions (this year)</text>
-  <text x="470" y="140" fill="#e8e6f0" font-size="13" font-family="monospace" text-anchor="end">220</text>
+  <text x="470" y="140" fill="#e8e6f0" font-size="13" font-family="monospace" text-anchor="end">222</text>
   <text x="25" y="170" fill="#7c7a8e" font-size="13" font-family="monospace">👥 Followers</text>
   <text x="470" y="170" fill="#e8e6f0" font-size="13" font-family="monospace" text-anchor="end">7</text>
 </svg>
